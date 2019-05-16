@@ -1,0 +1,23 @@
+{
+  "name": "js-programming-vocab-list",
+  "version": "1.0.0",
+  "description": "A vocabulary list for people learning programming with Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-readme": "node ./node_modules/booklisp/index.js ./js-programming-vocab-list/readme.md README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmstead/js-programming-vocab-list.git"
+  },
+  "author": "Chris Stead",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/cmstead/js-programming-vocab-list/issues"
+  },
+  "homepage": "https://github.com/cmstead/js-programming-vocab-list#readme",
+  "devDependencies": {
+    "booklisp": "^1.7.3"
+  }
+}
