@@ -57,7 +57,7 @@ A program which has been written and deployed to an environment for *execution*.
 
 Slang for the act of writing source code for a program.
 
-**Delpoyment**
+**Deployment**
 
 Placing source code files on a server and running the program for others to access, or installing a program on a computer for *execution*.
 
