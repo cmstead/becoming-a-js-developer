@@ -25,10 +25,11 @@ this
 Operators are perform single operations on values in your program.  Below is a list of common operators you are likely to encounter and use.
 
 ```javascript
-// Arithmetic: +, -, *, /, % (modulus or remainder)
+// Arithmetic: +, -, *, /, **, % (modulus or remainder)
 5 + 5;
 3 - 4;
 10 * 10;
+2 ** 10; // ** is the "power" or exponential operator
 100 / 4;
 5 % 3; // this will produce 2
 

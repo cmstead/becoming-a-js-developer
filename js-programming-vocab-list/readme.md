@@ -7,5 +7,6 @@
     (section-main "./js-programming-vocab-list/content/names-and-basics.md")
     (section-main "./js-programming-vocab-list/content/programming-jargon.md")
     (section-main "./js-programming-vocab-list/content/programming-foundations.md")
+    (section-main "./js-programming-vocab-list/content/javascript-value-types.md")
 )
 /bl-->

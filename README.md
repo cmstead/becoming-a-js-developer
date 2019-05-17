@@ -8,6 +8,7 @@
 - [Section 1: Names and Basics](#user-content-names-and-basics)
 - [Section 2: Programming Jargon](#user-content-programming-jargon)
 - [Section 3: Programming Foundations](#user-content-programming-foundations)
+- [Section 4: Value Types](#user-content-value-types)
 
 ## Names and Basics ##
 **ECMA**
@@ -108,10 +109,11 @@ this
 Operators are perform single operations on values in your program.  Below is a list of common operators you are likely to encounter and use.
 
 ```javascript
-// Arithmetic: +, -, *, /, % (modulus or remainder)
+// Arithmetic: +, -, *, /, **, % (modulus or remainder)
 5 + 5;
 3 - 4;
 10 * 10;
+2 ** 10; // ** is the "power" or exponential operator
 100 / 4;
 5 % 3; // this will produce 2
 
@@ -162,6 +164,101 @@ A name which can be used to reference a value from within your program.
 var greeting = 'Well, hello there!';
 let myDogHasFleas = false;
 const answerToLifeTheUniverseAndEverything = 42;
+```
+
+
+    
+
+## Value Types ##
+**Bigint**
+
+Bigint is an integer with arbitrary precision.
+
+```javascript
+1234n
+2n ** 53n // from MDN
+```
+
+**Boolean**
+
+Boolean values are always either true or false.
+
+```javascript
+true
+false
+```
+
+**Function**
+
+Functions are the means for creating reusable executable units of code. Functions are a stand-alone data type. Functions will be covered in more depth later.
+
+```javascript
+function add (a, b) {
+    return a + b;
+}
+```
+
+**Null**
+
+Null represents the circumstance in which a variable has been set, but contains no value.
+
+```javascript
+let aNewVariable = null;
+```
+
+**Number**
+
+Any number value is a number in Javascript, except a bigint.
+
+```javascript
+0
+-5
+382.776
+NaN
+Infinity
+```
+
+**Object**
+
+An object is a compound data type which may be used to represent complex values and rich data representations.  Arrays are also objects, but can be identified by Array.isArray();
+
+```javascript
+{
+    id: 1234,
+    name: 'widget',
+    sides: '12'
+};
+
+[1, 2, 3, 4];
+
+Array.isArray(['this', 'is', 'an', 'array']); // true
+Array.isArray({}); // false
+```
+
+**String**
+
+Strings are contiguous sets of characters.  This is the most common means for creating human-readable output.
+
+```javascript
+'Hello, World!'
+'This is a string.'
+```
+
+**Symbol**
+
+Symbols are a unique and immutable data type which may be used as the key for an object.
+
+```javascript
+Symbol('This is a symbol')
+Symbol(42)
+```
+
+**Undefined**
+
+Undefined is unique in that it represents a value which has not yet been set.
+
+```javascript
+undefined
 ```
 
 
