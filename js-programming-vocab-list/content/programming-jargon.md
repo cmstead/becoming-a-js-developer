@@ -1,6 +1,6 @@
 <!--bl
 (filemeta
-    (title "Programming Lingo"))
+    (title "Programming Jargon"))
 /bl-->
 
 **Application**

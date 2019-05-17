@@ -6,7 +6,7 @@
 ## Table Of Contents ##
 
 - [Section 1: Names and Basics](#user-content-names-and-basics)
-- [Section 2: Programming Lingo](#user-content-programming-lingo)
+- [Section 2: Programming Jargon](#user-content-programming-jargon)
 - [Section 3: Programming Foundations](#user-content-programming-foundations)
 
 ## Names and Basics ##
@@ -47,7 +47,7 @@ A program which interprets and executes a script, like Javascript. (Other types 
 The ECMA technical committee which is in charge of defining the ECMAScript language features and behaviors.
     
 
-## Programming Lingo ##
+## Programming Jargon ##
 
 **Application**
 
