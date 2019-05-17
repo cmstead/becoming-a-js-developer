@@ -86,6 +86,64 @@ An *application* or system which maintains all created *source code* with a rich
 
 ## Programming Foundations ##
 
+**Comments**
+
+A way to add notes to your code without impacting the way the program runs.
+
+```javascript
+// This comment can only live on one line.
+
+/*
+This comment can span
+across
+multiple
+lines
+like
+this
+*/
+```
+
+**Common Operators**
+
+Common operators for operations you'll likely want:
+
+```javascript
+// Arithmetic: +, -, *, /, % (modulus or remainder)
+5 + 5;
+3 - 4;
+10 * 10;
+100 / 4;
+5 % 3; // this will produce 2
+
+// Assignment: =
+var myVariable = 15;
+
+// Special arithemtic operators: ++, --
+// ++ adds 1 and assigns new value to variable
+// -- subtracts 1 and assigns new value to variable
+myVariable ++;
+myVariable --;
+
+// String concatenation: +
+'This is a test' + ' ' + 'of string concatenation';
+var concatToThis = 'This is another test';
+
+// Type checking: typeof
+typeof 12345;
+
+// Comparison: ===, >, <, >=, <=
+'test' === 'test';
+5 > 3;
+7 < 12;
+9 >= -77;
+17 <= 3000;
+
+// Logical Operators: &&, ||, !
+true && true; // and
+true || false; // or
+!true; // read as "not true" resolves to false
+```
+
 **Values**
 
 A value is any concrete data a program might use to run.
@@ -106,22 +164,7 @@ let myDogHasFleas = false;
 const answerToLifeTheUniverseAndEverything = 42;
 ```
 
-**Comments**
 
-A way to add notes to your code without impacting the way the program runs.
-
-```javascript
-// This comment can only live on one line.
-
-/*
-This comment can span
-across
-multiple
-lines
-like
-this
-*/
-```
     
 
 <!-- GENERATED DOCUMENT! DO NOT EDIT! -->
