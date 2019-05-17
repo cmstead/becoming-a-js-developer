@@ -20,9 +20,9 @@ this
 */
 ```
 
-**Common Operators**
+**Operators**
 
-Common operators for operations you'll likely want:
+Operators are perform single operations on values in your program.  Below is a list of common operators you are likely to encounter and use.
 
 ```javascript
 // Arithmetic: +, -, *, /, % (modulus or remainder)
