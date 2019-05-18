@@ -2,7 +2,7 @@
 
 This is intended as a reference for someone who is setting up their very first few Express applications.  This will not be sufficient for large-scale applications.
 
-Setting up the Express app:
+**Setting up the Express app:**
 
 ```javascript
 // Require basic packages
@@ -22,7 +22,42 @@ app.use(express.json());
 app.use(express.static('public'));
 ```
 
-Different route types (HTTP REST verbs)
+**Adding a view rendering engine:**
+
+For handlebars:
+
+```javascript
+const handlebars = require('express-handlebars');
+
+app.engine('handlebars', handlebars({
+  // be sure your default layout name matches the actual name
+  // of the layout file you want to use in views/layouts
+  defaultLayout: 'main' 
+}));
+
+app.set('view engine', 'handlebars');
+```
+
+For pug:
+
+```javascript
+// Pug is the Express preferred rendering engine so this is
+// all that is required to get it working.
+app.set('view engine', 'pug');
+```
+
+For more information on using Pug, go here:
+[Pug Docs for Express](https://expressjs.com/en/guide/using-template-engines.html)
+
+**Rendering data with a view engine:**
+
+```javascript
+app.get('/myDataView', function(request, response) {
+  response.render('myDataViewTemplate', myData);
+});
+```
+
+**Different route types (HTTP REST verbs):**
 
 ```javascript
 app.get();
@@ -31,7 +66,7 @@ app.put();
 app.delete();
 ```
 
-Creating a new route in your server file:
+**Creating a new route in your server file:**
 
 ```javascript
 app.get( // also works for delete
@@ -59,7 +94,7 @@ app.post( // also works for put
   }
 );
 ```
-Start your server:
+**Start your server:**
 
 ```javascript
 app.listen(PORT, function(error) {
