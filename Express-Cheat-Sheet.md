@@ -38,6 +38,9 @@ app.engine('handlebars', handlebars({
 app.set('view engine', 'handlebars');
 ```
 
+For information on using Handlebars, visit their site:
+[HandlebarsJS Site](https://handlebarsjs.com/)
+
 For pug:
 
 ```javascript
