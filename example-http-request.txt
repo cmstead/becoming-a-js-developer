@@ -1,0 +1,13 @@
+POST /test HTTP/1.1
+Host: foo.example
+Content-Type: application/json
+Content-Length: 146
+
+{
+    "name": "Joe Bazooka",
+    "favoriteThings": [
+        "Rock-Hard Bubble Gum",
+        "Tiny Comic Strips",
+        "The Color Pink"
+    ]
+}
