@@ -39,3 +39,9 @@ See *version control system*
 
 An *application* or system which maintains all created *source code* with a rich history in order to facilitate reviewing old code and adding new code.
 
+**Encapsulation**
+
+A function or object acting as an abstraction over the details of an implementation.
+
+**Contract**
+
