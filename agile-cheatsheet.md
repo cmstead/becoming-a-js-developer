@@ -85,3 +85,4 @@ Several practices have arisen around agile software development. Below is a (non
 - Sparrow Decks (code smell identification tool)
 - Seven Stages of Naming (code readability process -- Arlo Belshee)
 - CRUD of Names (naming practices -- Arlo Belshee)
+- Mob Programming RPG (Learn Mob Programming with your friends -- Larsen)
