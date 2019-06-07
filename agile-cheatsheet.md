@@ -76,6 +76,7 @@ Several practices have arisen around agile software development. Below is a (non
 - Working Effectively with Legacy Code (Feathers)
 - Refactoring (Fowler)
 - Refactoring to Patterns (Kerievsky)
+- XUnit Test Patterns (Meszaros)
 - Agile Retrospectives (Derby and Larsen)
 
 ## Other Topics ##
