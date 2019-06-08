@@ -43,6 +43,7 @@ Several practices have arisen around agile software development. Below is a (non
     - Code Cooking
 - Mob Programming
 - Refactoring
+- Stand-Up
 - Code Smells (identifying and eliminating)
 - Retrospectives
 - Kanban
@@ -64,6 +65,14 @@ Several practices have arisen around agile software development. Below is a (non
 - Scrum Master
 - Product Owner
 - Customer
+
+## Common Terms ##
+
+- Cadence -- How often something is done
+- Burndown -- Actual work done as compared against expected work
+- Estimate -- A value representing amount or complexity of work to be done; common sizing:
+    - story points (Fibonacci: 1, 2, 3, 5, 8, 13)
+    - t-shirt sizes (s, m, l, xl)
 
 ## Books to Learn More ##
 
