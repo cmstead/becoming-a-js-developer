@@ -68,7 +68,7 @@ After a repository has been forked, to your account, you can clone and pull from
 2. Clone the new repository from *your account* (not the original)
     - `git clone https://github.com/yourUsername/yourRespositoryFork.git`
 3. Set an upstream remote pointing to the *original repository*
-    - `git remote set upstream https://github.com/originalUsername/originalRepositoryName.git`
+    - `git remote add upstream https://github.com/originalUsername/originalRepositoryName.git`
 
 ### The workflow for working with a forked repository is as follows: ###
 
@@ -76,5 +76,5 @@ After a repository has been forked, to your account, you can clone and pull from
     - `git pull upstream master`
 2. Make changes locally
 3. Commit local changes as usual
-4. Push to your branch as usual
+4. Push to your remote repository (origin) as usual
 5. When your feature work is done, create a new pull request from within Github
