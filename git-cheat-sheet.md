@@ -76,5 +76,12 @@ After a repository has been forked, to your account, you can clone and pull from
     - `git pull upstream master`
 2. Make changes locally
 3. Commit local changes as usual
-4. Push to your remote repository (origin) as usual
-5. When your feature work is done, create a new pull request from within Github
+    1. `git add --all`
+    2. `git commit -m "This is the reason I made the changes"`
+4. Pull from upstream and then push your changes to your repo
+    1. `git pull upstream master`
+    2. `git push origin master`
+5. When your feature work is done, do this **in the browser**: open your repo on GitHub, you should see an option to **create a pull request**.
+6. After your pull request has been merged, be sure to pull upstream again.
+    - `git pull upstream master`
+    

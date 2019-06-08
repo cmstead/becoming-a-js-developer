@@ -9,5 +9,6 @@
     (section-main "./js-programming-vocab-list/content/programming-foundations.md")
     (section-main "./js-programming-vocab-list/content/javascript-value-types.md")
     (section-main "./js-programming-vocab-list/content/flow-control-structures.md")
+    (section-main "./js-programming-vocab-list/content/design-patterns.md")
 )
 /bl-->

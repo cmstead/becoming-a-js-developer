@@ -45,3 +45,6 @@ A function or object acting as an abstraction over the details of an implementat
 
 **Contract**
 
+The kinds of data a function or method expects as arguments, and returns.
+
+E.g. `function add(a, b){ return a + b; }` The contract for the `add` function is `a:number, b:number => number`.
