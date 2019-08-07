@@ -54,7 +54,7 @@
         - Observables
         - RxJS (Library)
 
-# Network Protocols, Patterns, & Pitfalls #
+## Network Protocols, Patterns, & Pitfalls ##
 
 - HTTP
 - CORS
