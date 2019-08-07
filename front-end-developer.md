@@ -1,6 +1,6 @@
 # So You Want To Do Front-End Development#
 
-## Stuff You Should Know ##
+## Stuff To Learn and Know ##
 
 - HTML
     - CORE: HTML5 & xhtml (or current standard)
@@ -26,6 +26,14 @@
     - Advanced: [Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)   
 - JavaScript (ECMAScript)
     - CORE: ECMAScript 2018+ (or current standard)
+    - Compile-to-JS Languages (Optional)
+        - Clojurescript
+        - Dart (Required for Flutter)
+        - Elm
+        - Purescript
+        - Reason
+        - Scala.js
+        - TypeScript (Required for Angular)
     - [JQuery](https://jquery.com/)
     - Frameworks (The Big Three)
         - [Angular](https://angular.io/)
