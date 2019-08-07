@@ -1,4 +1,4 @@
-# So You Want To Do Front-End Development#
+# So You Want To Do Front-End Development #
 
 ## Stuff To Learn and Know ##
 
