@@ -1,4 +1,4 @@
-# So You Want To Do Front-End Development #
+# So You Want To Do Client-Side (Front-End) Development #
 
 ## HTML ##
 - CORE: HTML5 & xhtml (or current standard)

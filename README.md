@@ -9,7 +9,7 @@ Originally this was just going to be a single document, but over time several do
 
 ## Developer Learning Guides/Lists ##
 
-- [Front-End Developer](./front-end-developer.md)
+- [Client-Side Developer](./front-end-developer.md)
 
 ## JS Frameworks ##
 
