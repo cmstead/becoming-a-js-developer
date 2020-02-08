@@ -26,11 +26,12 @@ The Modern Agile framework was developed by Joshua Kerievsky and a group of othe
 
 ## Agile Frameworks ##
 
-Agile frameworks are systems which attempt to capture the intent and nature of the Agile Manifesto while also answering common business questions.  Three common frameworks are the following:
+Agile frameworks are systems which attempt to capture the intent and nature of the Agile Manifesto while also answering common business questions.  Four common frameworks are the following:
 
-- Scrum
+- Kanban
 - LeSS (Large-Scale Scrum)
 - SAFe (Scaled Agile Framework)
+- Scrum
 
 ## Agile Practices ##
 
@@ -46,7 +47,6 @@ Several practices have arisen around agile software development. Below is a (non
 - Stand-Up
 - Code Smells (identifying and eliminating)
 - Retrospectives
-- Kanban
 - Planning Poker
 - Backlogs and Backlog Grooming
 - Continuous Integration/Continuous Deployment (CI/CD)
@@ -58,13 +58,13 @@ Several practices have arisen around agile software development. Below is a (non
 
 ## Common Positions in Agile Software Development ##
 
-- Developer
 - Coach
+- Customer
+- Developer
 - Mentor
+- Product Owner
 - Project Manager
 - Scrum Master
-- Product Owner
-- Customer
 
 ## Common Terms ##
 
