@@ -10,8 +10,6 @@ Not all refactorings are as safe or stable as others. It is always worth verifyi
 
 Extract variable takes a single expression or selection in your source code and creates a new variable containing the output of the work. The newly created variable will be substituted for the original selection.
 
-```javascript
-// Before:
+**Extract Method**
 
-function 
-```
+Extract method takes an expression or selection in your source code and creates an entirely new method or function. 
