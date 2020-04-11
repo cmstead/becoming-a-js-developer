@@ -1,0 +1,178 @@
+{
+    // JQuery snippets
+    "JQuery Script Include": {
+        "prefix": "jquery-script-include-cdn",
+        "body": [
+            "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>"
+        ],
+        "description": "Include JQuery in your HTML document"
+    },
+    "JQuery Element Selector": {
+        "prefix": "jquery-element-selector",
+        "body": [
+            "$(${1:'${2|.,#|}${3:identifier}'})$0"
+        ],
+        "description": "Add JQuery element selector"
+    },
+    "JQuery Event Handler": {
+        "prefix": "jquery-on-event-handler",
+        "body": [
+            "$(${1:'${2|.,#|}${3:identifier}'}).on('${4|click,change,keydown,keyup,mouseover,mousedown,mouseup|}', function(event){",
+            "\t$0",
+            "});"
+        ],
+        "description": "Add JQuery event handler"
+    },
+    "JQuery Ajax": {
+        "prefix": "jquery-ajax-setup-request",
+        "body": [
+            "$.${1|get,post,put,delete|}(${2|'url',{ url: '' }|}${3:, ${4:data}})",
+            ".then(function(data){",
+            "\t$5",
+            "})",
+            "fail(function(error){",
+            "\t$6",
+            "});"
+        ],
+        "description": "Add JQuery ajax method "
+    },
+
+    // Inquirer snippets
+    "Inquirer Prompt": {
+        "prefix": "inquirer-prompt",
+        "body": [
+            "inquirer.prompt([",
+            "\t$1",
+            "])${2|;,\n.then((resultData) => {\n\t\n});|}"
+        ],
+        "description": "Inquirer prompt call"
+    },
+    "Inquirer Question Options": {
+        "prefix": "inquirer-question-definition",
+        "body": [
+            "{",
+            "\tname: '${1:propertyName}',",
+            "\tmessage: '${2:Prompt displayed to the user}',",
+            "${3:\tvalidate: ($1) => {\n\t${4://function body here}\n\t\\}}",
+            "}"
+        ],
+        "description": "Inquirer question definition"
+    },
+    "Inquirer List Options": {
+        "prefix": "inquirer-list-definition",
+        "body": [
+            "{",
+            "\tname: '${1:propertyName}',",
+            "\tmessage: '${2:Prompt displayed to the user}',",
+            "\ttype: 'list',",
+            "\tchoices: [\n\t\t${3:'Choice strings'}\n\t]",
+            "}"
+        ],
+        "description": "Inquirer list definition"
+    },
+
+    // Express snippets
+    "Express Parser Middleware": {
+        "prefix": "express-middleware-body-parse-json",
+        "body": [
+            "app.use(express.urlencoded({ extended: true }));",
+            "app.use(express.json());"
+        ],
+        "description": "Body parsing middleware for JSON and URL-encoded data"
+    },
+    "Express Route": {
+        "prefix": "express-route-snippet",
+        "body": [
+            "app.${1|get,post,put,delete|}('/${2:path}', function (request, response) {",
+            "    // get all body stuff from request.body object",
+            "    // get all request parameter stuff from request.params object",
+            "    $0",
+            "    // respond with: response.send()",
+            "",
+            "});"
+        ],
+        "description": "Express route creation something or other"
+    },
+    "Express App Listener": {
+        "prefix": "express-listener",
+        "body": [
+            "app.listen(PORT, function() {",
+            "    console.log('listening on port ' + PORT);",
+            "});"
+        ],
+        "description": "Add Express server listener to document"
+    },
+
+    // Mocha Test snippets
+    "Arrange/Act/Assert": {
+        "prefix": "arrange-act-assert",
+        "body": [
+            "// Arrange",
+            "// Define the initial program state",
+            "$1",
+            "",
+            "// Act",
+            "// Call the method to run the behavior",
+            "$2",
+            "",
+            "// Assert",
+            "// Verify (assert) your expectation matches reality",
+            "$3"
+        ],
+        "description": "AAA - Arrange/Act/Assert"
+    },
+
+    "Mocha Describe Suite Setup": {
+        "prefix": "mocha-describe-suite",
+        "body": [
+            "describe('${1:describe test suite to run}', function () {",
+            "$2",
+            "});"
+        ],
+        "description": "Mocha 'describe' suite setup"
+    },
+
+    "Mocha It Test Setup": {
+        "prefix": "mocha-it-test",
+        "body": [
+            "it('${1:describe expectation}', function () {",
+            "\t$2",
+            "});"
+        ],
+        "description": "Mocha 'it' test setup"
+    },
+
+    //Chai assertion snippets
+
+    "Chai Require": {
+        "prefix": "chai-require",
+        "body": [
+            "const { ${1|assert,expect|} } = require('chai');"
+        ],
+        "description": ""
+    },
+
+    "Chai Assert Outcome": {
+        "prefix": "chai-assert-outcome",
+        "body": [
+            "assert.${1|equal,strictEqual,throws,doesNotThrow|}(${1:actualResult}, ${2:expectedResult});"
+        ],
+        "description": "Chai assertion of test outcomes"
+    },
+
+    "Chai Expect Outcome": {
+        "prefix": "chai-expect-outcome",
+        "body": [
+            "expect(${1:actualResult}).${2|to,to.not|}.${3|equal,strictEqual,throw|}(${4:expectedResult});"
+        ],
+        "description": "Chai assertion of test outcomes"
+    },
+
+    "": {
+        "prefix": "",
+        "body": [
+            
+        ],
+        "description": ""
+    },
+}
