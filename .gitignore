@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+
+# ignore js test file -- it's not useful for readers
+test.js
