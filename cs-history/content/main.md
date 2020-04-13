@@ -1,4 +1,8 @@
-# A Brief History of Modern Computing #
+<!--bl
+(filemeta
+    (title "A Brief History of Modern Computing")
+)
+/bl-->
 
 ## The Enigma Machine (1920s-1940s) ##
 

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-vocab": "node ./node_modules/booklisp/index.js ./js-programming-vocab-list/readme.md programming-vocab.md"
+    "build": "npm run build-history & npm run build-vocab",
+    "build-history": "node ./node_modules/booklisp/index.js ./cs-history/content/main.md ./cs-history/a-brief-history-of-modern-computing.md",
+    "build-vocab": "node ./node_modules/booklisp/index.js ./vocab-references/js-programming-vocab-list/readme.md ./vocab-references/programming-vocab.md"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,6 @@
   },
   "homepage": "https://github.com/cmstead/js-programming-vocab-list#readme",
   "devDependencies": {
-    "booklisp": "^1.7.4"
+    "booklisp": "^2.0.0"
   }
 }
