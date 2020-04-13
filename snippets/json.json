@@ -11,5 +11,19 @@
             "},"
         ],
         "description": "A snippet for creating new snippets"
+    },
+    "General Snippet snippet": {
+        "prefix": "general-snippet",
+        "body": [
+            "\"$1\": {",
+            "\t\"scope\": \"${2|javascript|}\",",
+            "\t\"prefix\": \"$3\",",
+            "\t\"body\": [",
+            "\t\t$4",
+            "\t],",
+            "\t\"description\": \"$5\"",
+            "},"
+        ],
+        "description": "A snippet for creating new snippets"
     }
 }

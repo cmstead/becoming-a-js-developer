@@ -1,5 +1,6 @@
 {
     // JQuery snippets
+
     "JQuery Script Include": {
         "prefix": "jquery-script-include-cdn",
         "body": [
@@ -36,8 +37,18 @@
         ],
         "description": "Add JQuery ajax method "
     },
+    "JQuery Document Ready": {
+        "prefix": "jquery-document-ready",
+        "body": [
+            "$(document).ready(function(){",
+            "$1",
+            "});"
+        ],
+        "description": "JQuery document ready statement"
+    },
 
     // Inquirer snippets
+
     "Inquirer Prompt": {
         "prefix": "inquirer-prompt",
         "body": [
@@ -72,6 +83,7 @@
     },
 
     // Express snippets
+
     "Express Parser Middleware": {
         "prefix": "express-middleware-body-parse-json",
         "body": [
@@ -104,6 +116,34 @@
     },
 
     // Mocha Test snippets
+
+    "Mocha Setup Or Teardown": {
+        "prefix": "mocha-before-after-each-setup-teardown",
+        "body": [
+            "${1|beforeEach,afterEach,before,after|}(function(){",
+            "$2",
+            "});"
+        ],
+        "description": "Mocha Before and After blocks"
+    },
+    "Mocha Describe Suite Setup": {
+        "prefix": "mocha-describe-suite",
+        "body": [
+            "describe('${1:describe test suite to run}', function () {",
+            "$2",
+            "});"
+        ],
+        "description": "Mocha 'describe' suite setup"
+    },
+    "Mocha It Test Setup": {
+        "prefix": "mocha-it-test",
+        "body": [
+            "it('${1:describe expectation}', function () {",
+            "\t$2",
+            "});"
+        ],
+        "description": "Mocha 'it' test setup"
+    },
     "Arrange/Act/Assert": {
         "prefix": "arrange-act-assert",
         "body": [
@@ -122,26 +162,6 @@
         "description": "AAA - Arrange/Act/Assert"
     },
 
-    "Mocha Describe Suite Setup": {
-        "prefix": "mocha-describe-suite",
-        "body": [
-            "describe('${1:describe test suite to run}', function () {",
-            "$2",
-            "});"
-        ],
-        "description": "Mocha 'describe' suite setup"
-    },
-
-    "Mocha It Test Setup": {
-        "prefix": "mocha-it-test",
-        "body": [
-            "it('${1:describe expectation}', function () {",
-            "\t$2",
-            "});"
-        ],
-        "description": "Mocha 'it' test setup"
-    },
-
     //Chai assertion snippets
 
     "Chai Require": {
@@ -151,7 +171,6 @@
         ],
         "description": ""
     },
-
     "Chai Assert Outcome": {
         "prefix": "chai-assert-outcome",
         "body": [
@@ -159,20 +178,11 @@
         ],
         "description": "Chai assertion of test outcomes"
     },
-
     "Chai Expect Outcome": {
         "prefix": "chai-expect-outcome",
         "body": [
             "expect(${1:actualResult}).${2|to,to.not|}.${3|equal,strictEqual,throw|}(${4:expectedResult});"
         ],
         "description": "Chai assertion of test outcomes"
-    },
-
-    "": {
-        "prefix": "",
-        "body": [
-            
-        ],
-        "description": ""
     },
 }
