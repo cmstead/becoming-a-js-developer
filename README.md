@@ -1,20 +1,11 @@
-# Programming Cheat Sheets for Students Learning Javascript #
+# Becoming a Javascript Developer #
 
-Originally this was just going to be a single document, but over time several docs have surfaced which are all important to understanding the current programming space in both the Javascript community and the larger programming community. Below is the current list of documents for students learning programming with Javascript.
+This project started out as a couple of quick references to common things people who are learning Javascript in one of my classes might want to know. Now this project is a work in process capturing a collection of examples, cheat sheets, common job requirements, tools to improve learning, and more.
 
-## General ##
+This is not a blog, instead it is a repository for "other things," whatever that might mean. Hopefully you will find this useful, even if you are not aiming to become a Javascript developer in particular.
 
-- [Agile Cheat Sheet](./agile-cheatsheet.md)
-- [Programming Vocabulary](./programming-vocab.md)
+One thing I will leave you with is this:
 
-## Developer Learning Guides/Lists ##
+If you have developed some skill and want to start progressing through a deeper understanding of how to be a professional Javascript developer, I encourage you to take a look at the JS Learner Forms:
 
-- [Client-Side (Front-End) Developer](./front-end-developer.md)
-
-## JS Frameworks ##
-
-- [Express Cheat Sheet](./Express-Cheat-Sheet.md)
-
-## Common Tools ##
-
-- [Git Cheat Sheet](./Express-Cheat-Sheet.md)
+[JS Learner Forms](https://github.com/cmstead/jsLearnerForms)
