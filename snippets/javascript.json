@@ -1,50 +1,28 @@
 {
-    // JQuery snippets
+    // Vanilla JS
 
-    "JQuery Script Include": {
-        "prefix": "jquery-script-include-cdn",
+    "Instantiable Object (Constructor + Prototype)": {
+        "prefix": "object-constructor-instantiable",
         "body": [
-            "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>"
-        ],
-        "description": "Include JQuery in your HTML document"
-    },
-    "JQuery Element Selector": {
-        "prefix": "jquery-element-selector",
-        "body": [
-            "$(${1:'${2|.,#|}${3:identifier}'})$0"
-        ],
-        "description": "Add JQuery element selector"
-    },
-    "JQuery Event Handler": {
-        "prefix": "jquery-on-event-handler",
-        "body": [
-            "$(${1:'${2|.,#|}${3:identifier}'}).on('${4|click,change,keydown,keyup,mouseover,mousedown,mouseup|}', function(event){",
+            "function ${1:MyObject}($2){",
+            "\t$3",
+            "}",
+            "",
+            "$1.prototype = {",
             "\t$0",
-            "});"
+            "};"
         ],
-        "description": "Add JQuery event handler"
+        "description": "Instantiable prototype-style object"
     },
-    "JQuery Ajax": {
-        "prefix": "jquery-ajax-setup-request",
+
+    "Prototype Method": {
+        "prefix": "object-method-prototype",
         "body": [
-            "$.${1|get,post,put,delete|}(${2|'url',{ url: '' }|}${3:, ${4:data}})",
-            ".then(function(data){",
-            "\t$5",
-            "})",
-            "fail(function(error){",
-            "\t$6",
-            "});"
+            "${1:myMethod}: function($2) {",
+            "\t$0",
+            "},"
         ],
-        "description": "Add JQuery ajax method "
-    },
-    "JQuery Document Ready": {
-        "prefix": "jquery-document-ready",
-        "body": [
-            "$(document).ready(function(){",
-            "$1",
-            "});"
-        ],
-        "description": "JQuery document ready statement"
+        "description": "Method for a prototype-style object"
     },
 
     // Inquirer snippets
@@ -113,6 +91,93 @@
             "});"
         ],
         "description": "Add Express server listener to document"
+    },
+
+    // Mongoose Snippets
+
+    "Mongoose Model": {
+        "prefix": "mongoose-model",
+        "body": [
+            "var mongoose = require('mongoose');",
+            "var Schema = mongoose.Schema;",
+            "var ${1:ModelName}Schema = new Schema({",
+            "\t$0",
+            "});",
+            "",
+            "var $1 = mongoose.model('$1', UserSchema);",
+            "module.exports = $1;"
+        ],
+        "description": "Base mongoose model"
+    },
+
+    "Mongoose Model Property": {
+        "prefix": "mongoose-model-property",
+        "body": [
+            "${1:propertyName}: {",
+            "\ttype: ${2|String,Number,Boolean,Date|}$0",
+            "},"
+        ],
+        "description": "Mongoose property definition"
+    },
+
+    "Mongoose Model Method": {
+        "prefix": "mongoose-model-method",
+        "body": [
+            "${1:ModelName}Schema.methods.${2:methodName} = function() {",
+            "\treturn; // Don't forget to return your value",
+            "};"
+        ],
+        "description": "Mongoose custom method definition"
+    },
+
+    // Sequelize
+
+    "Sequelize Model": {
+        "prefix": "sequelize-model",
+        "body": [
+            "module.exports = function(sequelize, DataTypes) {",
+            "\tlet ${1:ModelName} = sequelize.define('$1', {",
+            "\t\t$0",
+            "\t});",
+            "",
+            "\t$1.associate = function(models) {",
+            "",
+            "\t}",
+            "};"
+        ],
+        "description": "Sequelize base model"
+    },
+
+    "Sequelize Model BelongsTo Association": {
+        "prefix": "sequelize-model-belongs-to-association",
+        "body": [
+            "${1:ModelName}.belongsTo(models.${2:AssociatedModelName}, {",
+            "\tforeignKey: {",
+            "\t\tallowNull: ${3|true,false|}",
+            "\t}",
+            "});"
+        ],
+        "description": "Sequelize BelongsTo association definition"
+    },
+
+    "Sequelize Model HasMany Association": {
+        "prefix": "sequelize-model-has-many-association",
+        "body": [
+            "${1:ModelName}.hasMany(models.${2:AssociatedModelName}, {",
+            "\t$0",
+            "});"
+        ],
+        "description": "Sequelize HasMany association definition"
+    },
+
+    "Sequelize Model Property": {
+        "prefix": "sequelize-model-property",
+        "body": [
+            "title: {",
+            "\ttype: DataTypes.STRING$0",
+            "},"
+        ],
+        "description": "Sequelize property definition"
     },
 
     // Mocha Test snippets
