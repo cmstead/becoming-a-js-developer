@@ -2,10 +2,20 @@
 <!-- GENERATED DOCUMENT! DO NOT EDIT! -->
 # A Brief History of Modern Computing #
 
-## The Enigma Machine (1920s-1940s) ##
+## The First Programmable Computing Machine ##
 
-[Enigma Machine](https://en.wikipedia.org/wiki/Enigma_machine)
-[Cryptography](https://en.wikipedia.org/wiki/Cryptography)
+- [Charles Babbage]()
+- [The Analytical Engine]()
+
+## Early Computer Programming ##
+
+- [Ada Lovelace]()
+
+## World War II ##
+
+- [Bletchly Park]()
+- [Enigma Machine](https://en.wikipedia.org/wiki/Enigma_machine)
+- [Cryptography](https://en.wikipedia.org/wiki/Cryptography)
 
 ## The Turing Machine and Lambda Calculus (1930s) ##
 
@@ -13,9 +23,10 @@ People:
 - [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing)
 - [Alonzo Church](https://en.wikipedia.org/wiki/Alonzo_Church)
 
-[The Halting Problem](https://en.wikipedia.org/wiki/Halting_problem)
-[Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus)
-[Turing Machine](https://en.wikipedia.org/wiki/Turing_machine)
+Ideas in Computing:
+- [The Halting Problem](https://en.wikipedia.org/wiki/Halting_problem)
+- [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus)
+- [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine)
 
 ## ENIAC (1945-1955)##
 
@@ -33,82 +44,59 @@ People:
 - [John Mauchly](https://en.wikipedia.org/wiki/John_Mauchly)
 - [J. Presper Eckert](https://en.wikipedia.org/wiki/J._Presper_Eckert)
 
-[ENIAC](https://en.wikipedia.org/wiki/ENIAC)
+The Computer:
+- [ENIAC](https://en.wikipedia.org/wiki/ENIAC)
 
 ## Programmng Language Compilers (1952 - Present) ##
 
-People:
-- Autocode
-    - [Alick Glennie](https://en.wikipedia.org/wiki/Alick_Glennie)
+Compiler and Innovator:
 - A-0
     - [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)
     - Rear Admiral Hopper coined the name "compiler"
+- Autocode
+    - [Alick Glennie](https://en.wikipedia.org/wiki/Alick_Glennie)
 
-## Fortran (1957 - Present) ##
+## Programming Languages ##
 
-"Formula Translation"
+### Systems Programming Languages: ###
+- [Assembly]()
+- [C]()
+- [Go]()
+- [Rust]()
 
-Developed by IBM
+### Compiled General-Purpose Programming Languages: ###
+- [Fortran](https://en.wikipedia.org/wiki/Fortran)
+- [COBOL](https://en.wikipedia.org/wiki/COBOL)
+- [C++]()
+- [Java]()
+- [C#]()
 
-People:
-- [John Backus](https://en.wikipedia.org/wiki/John_Backus)
+### Interpreted General-Purpose Programming Languages ###
+- [Javascript]()
+- [Perl]()
+- [Python]()
 
-[Fortran](https://en.wikipedia.org/wiki/Fortran)
+### Common Domain Specific Languages: ###
+- [CSS (Web Document Formatting)]()
+- [HTML (Web Documents)]()
+- [SQL (Database Programming)]()
+- [XML (Data Structuring)]()
 
-## Lisp (1958 - Present) ##
+### Other Influential Languages: ###
+- [Lisp (1959 - Present)](https://en.wikipedia.org/wiki/Lisp_(programming_language))
+- [Miranda]()
+- [Smalltalk]()
+- [Self]()
 
-"List Processor"
-
-Major Dialects:
-- Common Lisp
-- Scheme
-
-People:
-- [John McCarthy](https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist))
-
-[Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language))
-
-## COBOL ##
-
-"common business-oriented language"
-
-People:
-- Howard Bromberg
-- Howard Discount
-- Mary K. Hawes
-- Vernon Reeves
-- Jean E. Sammet
-- William Selden
-- Gertrude Tierney
-
-[COBOL](https://en.wikipedia.org/wiki/COBOL)
-
-## APL ##
-## Prolog ##
-## ML (Language) ##
-## Algol ##
-## C, C++, and Objective-C ##
-## Smalltalk ##
-## Java ##
-## Python ##
-## C# ##
-## Javascript ##
-## HTML ##
-## CSS ##
-
-## Supercomputers ##
-## Microcomputers ##
-## Networking ##
-## ARPANET ##
 ## The Internet ##
-## The World Wide Web ##
+- [The Arpanet]()
+- [The Internet]()
+- [The World Wide Web]()
 
-## Artificial Intelligence and Machine Learning (1943 - Present) ##
-
-## Design Patterns ##
-## Code Smells ##
 ## Agile ##
-## Automated Testing ##
+- [Scrum]()
+- [Extreme Programming (XP)]()
+- [The Agile Manifesto]()
 
 ## Aphorisms ##
 
