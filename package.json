@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build-history & npm run build-vocab",
-    "build-history": "node ./node_modules/booklisp/index.js ./cs-history/content/main.md ./cs-history/a-brief-history-of-modern-computing.md",
-    "build-vocab": "node ./node_modules/booklisp/index.js ./vocab-references/js-programming-vocab-list/readme.md ./vocab-references/programming-vocab.md"
+    "build-history": "node ./node_modules/booklisp/index.js ./cs-history/src/content/main.md ./cs-history/a-brief-history-of-modern-computing.md",
+    "build-vocab": "node ./node_modules/booklisp/index.js ./vocab-references/src/js-programming-vocab-list/readme.md ./vocab-references/js-programming-vocab-list.md"
   },
   "repository": {
     "type": "git",
