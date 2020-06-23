@@ -13,3 +13,7 @@ Extract variable takes a single expression or selection in your source code and 
 **Extract Method**
 
 Extract method takes an expression or selection in your source code and creates an entirely new method or function. 
+
+**Rename**
+
+Update the name of a variable, function, or method, and all associated references, to better express the meaning of the code.
