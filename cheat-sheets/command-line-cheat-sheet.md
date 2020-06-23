@@ -1,4 +1,8 @@
-# Command Line Cheat Sheet #
+# Command Line Interface (CLI) Cheat Sheet #
+
+The command line environment is a powerful, but cryptic, tool. By working from within the command line, you can perform both simple and complex operations, far beyond the kind of work people can accomplish through point and click in the file explorer/finder environment.
+
+As you move through your programming journey, you will find it necessary to work from the command line. It would behoove you to become familiar with the command line early in the process.
 
 ## Tab Completion and History ##
 
