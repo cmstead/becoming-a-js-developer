@@ -2,22 +2,41 @@
 <!-- GENERATED DOCUMENT! DO NOT EDIT! -->
 # A Brief History of Modern Computing #
 
-## The First Programmable Computing Machine ##
+
+## Table Of Contents ##
+
+- [Section 1: Introduction](#user-content-introduction)
+- [Section 2: Early Modern Computing](#user-content-early-modern-computing)
+- [Section 3: Programming Languages](#user-content-programming-languages)
+- [Section 4: The Internet](#user-content-the-internet)
+- [Section 5: Agile](#user-content-agile)
+- [Section 6: Aphorisms](#user-content-aphorisms)
+
+### Introduction ###
+**Working Introduction**
+
+This is a brief history of modern computer programming. As such, I have intentionally omitted topics and people before Charles Babbage. This is not intended to be a fully authored work. Instead my goal is to collect up salient points in the timeline and present links which can lead people to a deeper understanding and discovery.
+
+I do not consider this a completed work, and I would love to have input from the broader community. I am most interested in placing information within the scope of history, and would rather focus on people and historic context than deep technical topics. Nothing in this work is intended to be exhaustive.
+    
+
+### Early Modern Computing ###
+### The First Programmable Computing Machine ###
 
 - [Charles Babbage](https://en.wikipedia.org/wiki/Charles_Babbage)
 - [The Analytical Engine](https://en.wikipedia.org/wiki/Analytical_Engine)
 
-## Early Computer Programming ##
+### Early Computer Programming ###
 
 - [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace)
 
-## World War II ##
+### World War II ###
 
 - [Bletchley Park](https://en.wikipedia.org/wiki/Bletchley_Park)
 - [Enigma Machine](https://en.wikipedia.org/wiki/Enigma_machine)
 - [Cryptography](https://en.wikipedia.org/wiki/Cryptography)
 
-## The Turing Machine and Lambda Calculus (1930s) ##
+### The Turing Machine and Lambda Calculus (1930s) ###
 
 People:
 - [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing)
@@ -28,7 +47,7 @@ Ideas in Computing:
 - [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus)
 - [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine)
 
-## ENIAC (1945-1955)##
+### ENIAC (1945-1955)###
 
 "Electronic Numerical Integrator and Computer"
 
@@ -47,7 +66,7 @@ People:
 The Computer:
 - [ENIAC](https://en.wikipedia.org/wiki/ENIAC)
 
-## Programmng Language Compilers (1952 - Present) ##
+### Programmng Language Compilers (1952 - Present) ###
 
 Compiler and Innovator:
 - A-0
@@ -56,8 +75,9 @@ Compiler and Innovator:
 - Autocode
     - [Alick Glennie](https://en.wikipedia.org/wiki/Alick_Glennie)
 
-## Programming Languages ##
+    
 
+### Programming Languages ###
 ### Systems Programming Languages: ###
 - [Assembly](https://en.wikipedia.org/wiki/Assembly_language)
 - [C](https://en.wikipedia.org/wiki/C_(programming_language))
@@ -90,15 +110,26 @@ Compiler and Innovator:
 - [Smalltalk](https://en.wikipedia.org/wiki/Smalltalk)
 - [Self](https://en.wikipedia.org/wiki/Self_(programming_language))
 
-## The Internet ##
+    
+
+### The Internet ###
 - [The Arpanet](https://en.wikipedia.org/wiki/ARPANET)
 - [The Internet](https://en.wikipedia.org/wiki/Internet)
 - [The World Wide Web](https://en.wikipedia.org/wiki/World_Wide_Web)
 
-## Agile ##
+    
+
+### Agile ###
 - [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))
 - [Extreme Programming (XP)](https://en.wikipedia.org/wiki/Extreme_programming)
 - [The Agile Manifesto](https://en.wikipedia.org/wiki/Agile_software_development#The_Agile_Manifesto)
+
+    
+
+### Aphorisms ###
+
+    
+
 
 ## Aphorisms ##
 
