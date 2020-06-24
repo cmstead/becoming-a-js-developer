@@ -24,35 +24,35 @@ Pressing the up and down keys will move you through your command history, making
 
 ## Directory (Folder) Tools ##
 
-**cd** -- Change directory (folder)
+- **cd** -- Change directory (folder)
     - Examples
         - `cd ./scripts` -- go to scripts directory
         - `cd ~` -- go to home directory
         - `cd ..` -- go up one directory
 
-**mkdir** -- Create a new directory (folder)
+- **mkdir** -- Create a new directory (folder)
     - Example
         - `mkdir ./html`
 
-**pwd** -- display the current directory
+- **pwd** -- display the current directory
     - Example
         - `pwd`
 
-**rmdir** -- Remove a directory (folder)
+- **rmdir** -- Remove a directory (folder)
     - Example
         - `rmdir ./hmtl`
 
 ## File Tools ##
 
-**ls** -- List all files (and directories)
+- **ls** -- List all files (and directories)
     - Example
         - `ls`
 
-**rm** -- Delete a file
+- **rm** -- Delete a file
     - Example
         - `rm ./idnex.html`
 
-**touch** -- Create a new file
+- **touch** -- Create a new file
     - Example
         - `touch ./index.html`
 
