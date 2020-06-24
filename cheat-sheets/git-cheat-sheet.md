@@ -1,5 +1,36 @@
 # Git Cheat Sheet #
 
+## Everyday Workflow ##
+
+### Committing Changes ###
+
+1. `git add --all`
+2. `git commit -m "This is the reason I made the changes"`
+
+### Pulling Changes From Remote ###
+
+1. Commit your changes (see Committing Changes)
+1. `git pull origin master`
+
+General command: `git pull origin branchName`
+
+**Important Note**
+
+If you forget to commit your changes before you pull, you will get an error.
+
+### Committing and Pushing Changes ###
+
+After changes are made to your local files, follow these steps to save your changes to Git:
+
+1. Pull changes from remote (see Pulling Changes From Remote)
+2. Commit your changes (see Committing Changes)
+3. `git push origin master`
+
+**Important Notes**
+
+- If you forget to pull changes before you push, you will get an error
+- If you forget to commit your changes before you push, your changes will not be saved to the server
+
 ## Common Commands ##
 
 - add
@@ -26,14 +57,6 @@
     - `git push origin master`
 - status -- get a list of all changes to current repository
     - `git status`
-
-## Committing and Pushing Changes ##
-
-After changes are made to your local files, follow these steps to save your changes to Git:
-
-1. `git add --all`
-2. `git commit -m "This is the reason I made the changes"`
-3. `git push origin master`
 
 ## Working With Branches ##
 

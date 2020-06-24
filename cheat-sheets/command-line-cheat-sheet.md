@@ -22,7 +22,7 @@ Pressing the up and down keys will move you through your command history, making
 - `*` -- "wild card" matches any character or characters
 - `~` -- your "home" directory
 
-## Directory (Folder) Tools ##
+## Directory (Folder) Commands ##
 
 - **cd** -- Change directory (folder)
     - Examples
@@ -42,7 +42,7 @@ Pressing the up and down keys will move you through your command history, making
     - Example
         - `rmdir ./hmtl`
 
-## File Tools ##
+## File Commands ##
 
 - **ls** -- List all files (and directories)
     - Example
@@ -56,3 +56,8 @@ Pressing the up and down keys will move you through your command history, making
     - Example
         - `touch ./index.html`
 
+## Other Useful Commands ##
+
+- **clear** -- clears output from the screen
+    - Example
+        - `clear`
