@@ -1,0 +1,22 @@
+.code {
+    clear: both;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background-color: #eee;
+    height: 16px;
+    line-height: 18px;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #900;
+    transition: background-color .75s ease-in-out;
+}
+
+.code.success {
+    transition: background-color .5s ease-in;
+    background-color: #ccffcc;
+}
+
+#git-command button.btn {
+    margin-top: 7px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/git-command-builder.css">
+
+    <title>Git Command Builder</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Basic Git Command Builder</h1>
+
+        <form id="command-builder-form">
+            <div class="form-group">
+                <label for="command-type">I want to: </label>
+                <select class="form-control" name="command-type" id="command-type">
+                    <option value="">-- Select One --</option>
+                    <optgroup label="Push and Pull">
+                        <option value="pull">Copy code from server (pull)</option>
+                        <option value="push">Save code to server (push)</option>
+                    </optgroup>
+                    <optgroup label="Add and Commit">
+                        <option value="add">Prepare code for saving (add)</option>
+                        <option value="commit">Save code to git (commit)</option>
+                    </optgroup>
+                    <optgroup label="Branch Management">
+                        <option value="checkout-branch">Move to a branch (checkout)</option>
+                        <option value="checkout-new-branch">Create a branch (checkout -b)</option>
+                        <option value="delete-branch">Delete a branch (branch -D)</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="command-options
+                pull-options
+                push-options
+                checkout-branch-options
+                checkout-new-branch-options
+                delete-branch-options">
+                <div class="form-group">
+                    <label for="pull-branch-name">Branch name: </label>
+                    <input 
+                        type="text"
+                        class="form-control branch-name"
+                        name="branch-name"
+                        id="branch-name"
+                        value="master"
+                        data-reset-value="master">
+                </div>
+            </div>
+
+            <div class="command-options commit-options">
+                <div class="form-group">
+                    <label for="commit-message">Commit message: </label>
+                    <input
+                        type="text"
+                        class="form-control commit-message"
+                        name="commit-message"
+                        id="commit-message"
+                        placeholder="Add a commit message here">
+                </div>
+                <div class="form-group">
+                    <label>Add (stage) files and commit <input type="checkbox" id="add-during-commit"></label>
+                </div>
+            </div>
+
+        </form>
+
+        <div id="git-command">
+            <h4>Git Command</h4>
+            <input type="text" class="form-control code">
+            <button 
+                class="btn btn-secondary" 
+                id="#copy-to-clipboard"
+                style="margin-top: 7px;">Copy to Clipboard</button>
+        </div>
+
+    </div>
+
+    <script src="./scripts/git-command-builder/command-builder-api.js"></script>
+    <script src="./scripts/git-command-builder/command-api.js"></script>
+    <script src="./scripts/git-command-builder/command-ui-api.js"></script>
+    <script src="./scripts/git-command-builder/command-builder-events.js"></script>
+</body>
+
+</html>
