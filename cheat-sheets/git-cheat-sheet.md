@@ -1,5 +1,9 @@
 # Git Cheat Sheet #
 
+If you want a quick and easy way to create common commands, just use this tool:
+
+[Basic Git Command Builder](../developer-tools/git-command-builder.html)
+
 ## Everyday Workflow ##
 
 ### Committing Changes ###
