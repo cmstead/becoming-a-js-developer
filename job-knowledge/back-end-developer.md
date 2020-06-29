@@ -28,7 +28,7 @@
 - Object-Oriented Development/Design
 - Functional Programming
 - Multi-threaded systems
-- REST
+- [REST](../cheat-sheets/rest-cheat-sheet.md)
 
 ## Data Storage ##
 
