@@ -2,7 +2,7 @@
 
 If you want a quick and easy way to create common commands, just use this tool:
 
-[Basic Git Command Builder](../developer-tools/git-command-builder.html)
+[Basic Git Command Builder](https://cmstead.github.io/becoming-a-js-developer/developer-tools/git-command-builder.html)
 
 ## Everyday Workflow ##
 
