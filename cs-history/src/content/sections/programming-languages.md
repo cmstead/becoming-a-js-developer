@@ -17,7 +17,7 @@
 - [C#](https://en.wikipedia.org/wiki/C#_(programming_language))
 
 ### Interpreted General-Purpose Programming Languages ###
-- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Perl](https://en.wikipedia.org/wiki/Perl)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 

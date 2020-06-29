@@ -11,7 +11,7 @@
       - SpringBoot
       - JSP
       - JSF
-    - Javascript (Node)
+    - JavaScript (Node)
       - Express
     - PHP
       - Laravel

@@ -1,7 +1,7 @@
 <!--bl
 (filemeta
     (title "JS Programming Vocabulary List")
-    (subtitle "A vocabulary list for people learning programming with Javascript"))
+    (subtitle "A vocabulary list for people learning programming with JavaScript"))
 
 (table-of-contents
     (section-main "./content/names-and-basics.md")

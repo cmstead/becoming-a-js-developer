@@ -2,9 +2,9 @@
 
 There are a number of wonderful learning materials out there. This is a list of books I recommend which are valuable both now, and in the future. I have tried to limit the books here to volumes which are unlikely to fall out of date simply because of the natural changes which occur in the software development world.
 
-## Javascript ##
+## JavaScript ##
 
-- Eloquent Javascript **(Beginner/Intermediate)**
+- Eloquent JavaScript **(Beginner/Intermediate)**
     - [Buy Local/Indie](https://www.indiebound.org/book/9781593272821)
     - [Amazon](https://www.amazon.com/Eloquent-JavaScript-Modern-Introduction-Programming/dp/1593272820)
 - You Don't Know JS (series) **(Beginner-Advanced)**
@@ -55,7 +55,7 @@ There are a number of wonderful learning materials out there. This is a list of 
 
 ## Theory ##
 
-- Data Structures and Algorithms with Javascript **(Intermediate)**
+- Data Structures and Algorithms with JavaScript **(Intermediate)**
     - [Bookshop (Online)](https://bookshop.org/a/287/9781449364939)
     - [Buy Local/Indie](https://www.indiebound.org/book/9781449364939)
     - [Amazon](https://www.amazon.com/Data-Structures-Algorithms-JavaScript-approaches-ebook/dp/B00IV3J23Y/ref=sr_1_4?dchild=1&keywords=Data+structures+and+algorithms+javascript&qid=1593449435&s=books&sr=1-4)
