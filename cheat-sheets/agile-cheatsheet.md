@@ -76,7 +76,6 @@ Several practices have arisen around agile software development. Below is a (non
 
 ## Books to Learn More ##
 
-- Clean Code (Martin)
 - The Pragmatic Programmer (Hunt and Thomas)
 - Test Driven Development (Beck)
 - Design Patterns

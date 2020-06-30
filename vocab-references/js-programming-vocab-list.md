@@ -1,7 +1,7 @@
 
 <!-- GENERATED DOCUMENT! DO NOT EDIT! -->
 # JS Programming Vocabulary List #
-#### A vocabulary list for people learning programming with Javascript ####
+#### A vocabulary list for people learning programming with JavaScript ####
 
 ## Table Of Contents ##
 
@@ -43,7 +43,7 @@ A *runtime* which allows *ECMAScript* to be run outside of the browser.
 
 **Runtime**
 
-A program which interprets and executes a script, like Javascript. (Other types of runtimes exist, but are not appropriate to discuss here.)
+A program which interprets and executes a script, like JavaScript. (Other types of runtimes exist, but are not appropriate to discuss here.)
 
 **TC-39**
 
@@ -223,7 +223,7 @@ let aNewVariable = null;
 
 **Number**
 
-Any number value is a number in Javascript, except a bigint.
+Any number value is a number in JavaScript, except a bigint.
 
 ```javascript
 0

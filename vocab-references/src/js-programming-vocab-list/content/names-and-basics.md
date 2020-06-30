@@ -32,7 +32,7 @@ A *runtime* which allows *ECMAScript* to be run outside of the browser.
 
 **Runtime**
 
-A program which interprets and executes a script, like Javascript. (Other types of runtimes exist, but are not appropriate to discuss here.)
+A program which interprets and executes a script, like JavaScript. (Other types of runtimes exist, but are not appropriate to discuss here.)
 
 **TC-39**
 

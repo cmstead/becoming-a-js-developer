@@ -40,7 +40,7 @@ let aNewVariable = null;
 
 **Number**
 
-Any number value is a number in Javascript, except a bigint.
+Any number value is a number in JavaScript, except a bigint.
 
 ```javascript
 0
