@@ -1,9 +1,2 @@
 {
-    "Bootstrap CDN Include": {
-        "prefix": "bootstrap-css-include-cdn",
-        "body": [
-            "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\">"
-        ],
-        "description": "Include Bootstrap in your HTML document"
-    },
 }

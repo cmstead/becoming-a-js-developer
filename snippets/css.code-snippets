@@ -1,0 +1,23 @@
+{
+    "Bootstrap CDN Include": {
+        "scope": "html",
+        "prefix": "bootstrap-css-include-cdn",
+        "body": [
+            "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\">"
+        ],
+        "description": "Include Bootstrap in your HTML document"
+    },
+
+    "Clearfix": {
+        "scope": "html,css",
+        "prefix": "css-clearfix",
+        "body": [
+            ".${1:clearfix}::after {",
+            "    content: \"\";",
+            "    clear: both;",
+            "    display: table;",
+            "  }"
+        ],
+        "description": "CSS Clearfix "
+    },
+}
