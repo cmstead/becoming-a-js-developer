@@ -29,7 +29,7 @@ Ideas in Computing:
 - [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus)
 - [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine)
 
-### ENIAC (1945-1955)###
+### ENIAC (1945-1955) ###
 
 "Electronic Numerical Integrator and Computer"
 
