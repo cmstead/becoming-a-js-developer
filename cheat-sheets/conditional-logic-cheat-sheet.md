@@ -152,14 +152,14 @@ Evaluating the expansion with Substitution:
 
 ### And ###
 
-|  And  | true   | false |
-| ------|--------|-------|
-| true  | true   | false |
-| false | false  | false |
+|  *And*    | true   | false |
+| ----------|--------|-------|
+| **true**  | true   | false |
+| **false** | false  | false |
 
 ### Or ###
 
-|  Or   | true  | false |
-| ------|-------|-------|
-| true  | true  | true  |
-| false | true  | false |
+|  *Or*     | true  | false |
+| ----------|-------|-------|
+| **true**  | true  | true  |
+| **false** | true  | false |
