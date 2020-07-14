@@ -111,6 +111,30 @@ if(!(isTrue || isFalse)) {
 }
 ```
 
+#### Order of Operations ####
+
+Logical operations are applied in this order:
+
+- Parentheses
+- Not
+- And
+- Or
+- Left to right
+
+Example:
+
+- `!false || false && (true || false)`
+    - === `!false || false && true`
+    - === `true || false && true`
+    - === `true || false`
+    - === `true`
+
+```javascript
+if(!isFalse || isFalse && (isTrue || isFalse)) {
+    console.log('This will run');
+}
+```
+
 ## Extended/Advanced Boolean Logic ##
 
 ### Evaluating Compound Expressions ###
