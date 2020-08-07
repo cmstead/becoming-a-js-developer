@@ -76,6 +76,7 @@ Several practices have arisen around agile software development. Below is a (non
 
 ## Books to Learn More ##
 
+- The Art of Agile Development (Shore and Warden)
 - The Pragmatic Programmer (Hunt and Thomas)
 - Test Driven Development (Beck)
 - Design Patterns
