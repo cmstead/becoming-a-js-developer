@@ -211,7 +211,7 @@
             "   [${2:queryParameters}],",
             "   function(error, ${3:data}) {",
             "           if(error) reject(error);",
-            "           resolve($1)",
+            "           resolve($3)",
             "       });",
             "});"
         ],
