@@ -143,9 +143,47 @@
             "    database: \"${3:databaseName}\"",
             "};",
             "",
-            "var connection = mysql.createConnection(connectionConfig);"
+            "var connection = mysql.createConnection(connectionConfig);",
+            "",
+            "connection.connect(function (err) {",
+            "    if (err) {",
+            "      console.error(`error connecting: ${err.stack}`);",
+            "      return;",
+            "    }",
+            "    console.log(`connected as id  ${connection.threadId}`);",
+            "});"
         ],
-        "description": ""
+        "description": "Create new MySQL database connection"
+    },
+
+    "MySQL Query": {
+        "prefix": "mysql-query",
+        "body": [
+            "connection.query(",
+            "   '${1:query}',",
+            "   [${2:queryParameters}],",
+            "   function(error, ${3:data}) {",
+            "       if(error) throw error;",
+            "       // logic goes here",
+            "   });"
+        ],
+        "description": "A bare MySQL query using a callback"
+    },
+
+    "MySQL Promise-returning Query": {
+        "prefix": "mysql-promise-query",
+        "body": [
+            "new Promise(function (resolve, reject){",
+            "   connection.query(",
+            "   '${1:query}',",
+            "   [${2:queryParameters}],",
+            "   function(error, ${3:data}) {",
+            "           if(error) reject(error);",
+            "           resolve($1)",
+            "       });",
+            "});"
+        ],
+        "description": "A MySQL query "
     },
     
     // Sequelize
@@ -267,5 +305,5 @@
             "expect(${1:actualResult}).${2|to,to.not|}.${3|equal,strictEqual,throw|}(${4:expectedResult});"
         ],
         "description": "Chai assertion of test outcomes"
-    },
+    }
 }
