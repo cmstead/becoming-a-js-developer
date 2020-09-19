@@ -130,6 +130,24 @@
         "description": "Mongoose custom method definition"
     },
 
+    // MySQL
+
+    "MySQL Connection Setup": {
+        "prefix": "mysql-connection-setup",
+        "body": [
+            "const connectionConfig = {",
+            "    host: \"localhost\",",              
+            "    port: 3306,",
+            "    user: \"${1:user}\",",
+            "    password: \"${2:password}\",",
+            "    database: \"${3:databaseName}\"",
+            "};",
+            "",
+            "var connection = mysql.createConnection(connectionConfig);"
+        ],
+        "description": ""
+    },
+    
     // Sequelize
 
     "Sequelize Model": {
