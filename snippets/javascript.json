@@ -25,6 +25,38 @@
         "description": "Method for a prototype-style object"
     },
 
+    // Classes
+
+    "Class": {
+        "prefix": "class",
+        "body": [
+            "class ${1:ClassName}${2: extends ${3:ParentClass}}{",
+            "    ${4:// Class logic here}",
+            "}"
+        ],
+        "description": "Core class setup"
+    },
+
+    "Class Constructor": {
+        "prefix": "class-constructor-ctor",
+        "body": [
+            "constructor(${1:parameters}){",
+            "   ${2:// Constructor logic goes here}",
+            "}"
+        ],
+        "description": "Class constructor"
+    },
+
+    "Class Method": {
+        "prefix": "class-method",
+        "body": [
+            "${1:methodName}(${2:parameters}){",
+            "   ${3:// Logic goes here}",
+            "}"
+        ],
+        "description": "Class method"
+    },
+
     // Inquirer snippets
 
     "Inquirer Prompt": {
