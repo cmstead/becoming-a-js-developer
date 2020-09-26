@@ -31,7 +31,7 @@
         "prefix": "class",
         "body": [
             "class ${1:ClassName}${2: extends ${3:ParentClass}}{",
-            "    ${4:// Class logic here}",
+            "\t${4:// Class logic here}",
             "}"
         ],
         "description": "Core class setup"
@@ -41,7 +41,7 @@
         "prefix": "class-constructor-ctor",
         "body": [
             "constructor(${1:parameters}){",
-            "   ${2:// Constructor logic goes here}",
+            "\t${2:// Constructor logic goes here}",
             "}"
         ],
         "description": "Class constructor"
@@ -51,7 +51,7 @@
         "prefix": "class-method",
         "body": [
             "${1:methodName}(${2:parameters}){",
-            "   ${3:// Logic goes here}",
+            "\t${3:// Logic goes here}",
             "}"
         ],
         "description": "Class method"
@@ -94,6 +94,16 @@
 
     // Express snippets
 
+    "Express App Setup": {
+        "prefix": "express-app-setup",
+        "body": [
+            "const express = require('express');",
+            "",
+            "const app = express();",
+            "const PORT = ${1:8080}"
+        ],
+        "description": "Express app setup block"
+    },
     "Express Parser Middleware": {
         "prefix": "express-middleware-body-parse-json",
         "body": [
@@ -102,14 +112,29 @@
         ],
         "description": "Body parsing middleware for JSON and URL-encoded data"
     },
+    "Express Handlbars Require": {
+        "prefix": "express-handlebars-require",
+        "body": [
+            "const expressHandlebars = require('express-handlebars');"
+        ],
+        "description": "Require the express-handlebars library"
+    },
+    "Express Handlebars Middleware": {
+        "prefix": "express-middleware-handlebars",
+        "body": [
+            "app.engine('handlebars', expressHandlebars({ defaultLayout: 'main' }));",
+            "app.set('view engine', 'handlebars');"
+        ],
+        "description": "Rendering engine setup for express-handlebars"
+    },
     "Express Route": {
         "prefix": "express-route-snippet",
         "body": [
             "app.${1|get,post,put,delete|}('/${2:path}', function (request, response) {",
-            "    // get all body stuff from request.body object",
-            "    // get all request parameter stuff from request.params object",
-            "    $0",
-            "    // respond with: response.send()",
+            "\t// get all body stuff from request.body object",
+            "\t// get all request parameter stuff from request.params object",
+            "\t$0",
+            "\t// respond with: response.send()",
             "",
             "});"
         ],
@@ -119,10 +144,26 @@
         "prefix": "express-listener",
         "body": [
             "app.listen(PORT, function() {",
-            "    console.log('listening on port ' + PORT);",
+            "\tconsole.log('listening on port ' + PORT);",
             "});"
         ],
         "description": "Add Express server listener to document"
+    },
+    "Express Response": {
+        "prefix": "express-response",
+        "body": [
+            "response.${1|send,json,render,sendFile,end|}(${2:value});"
+        ],
+        "description": "Express send response"
+    },
+    "Express Route File Setup": {
+        "prefix": "express-route-file-setup",
+        "body": [
+            "module.exports = function(app) {",
+            "\t${1:// Build routes here}",
+            "};"
+        ],
+        "description": "Setup for an express route file"
     },
 
     // Mongoose Snippets
@@ -168,21 +209,21 @@
         "prefix": "mysql-connection-setup",
         "body": [
             "const connectionConfig = {",
-            "    host: \"localhost\",",              
-            "    port: 3306,",
-            "    user: \"${1:user}\",",
-            "    password: \"${2:password}\",",
-            "    database: \"${3:databaseName}\"",
+            "\thost: \"localhost\",",              
+            "\tport: 3306,",
+            "\tuser: \"${1:user}\",",
+            "\tpassword: \"${2:password}\",",
+            "\tdatabase: \"${3:databaseName}\"",
             "};",
             "",
             "var connection = mysql.createConnection(connectionConfig);",
             "",
             "connection.connect(function (err) {",
-            "    if (err) {",
-            "      console.error(`error connecting: ${err.stack}`);",
-            "      return;",
-            "    }",
-            "    console.log(`connected as id  ${connection.threadId}`);",
+            "\tif (err) {",
+            "\t  console.error(`error connecting: ${err.stack}`);",
+            "\t  return;",
+            "\t}",
+            "\tconsole.log(`connected as id  ${connection.threadId}`);",
             "});"
         ],
         "description": "Create new MySQL database connection"
@@ -192,12 +233,12 @@
         "prefix": "mysql-query",
         "body": [
             "connection.query(",
-            "   '${1:query}',",
-            "   [${2:queryParameters}],",
-            "   function(error, ${3:data}) {",
-            "       if(error) throw error;",
-            "       // logic goes here",
-            "   });"
+            "\t'${1:query}',",
+            "\t[${2:queryParameters}],",
+            "\tfunction(error, ${3:data}) {",
+            "\t\tif(error) throw error;",
+            "\t\t// logic goes here",
+            "\t});"
         ],
         "description": "A bare MySQL query using a callback"
     },
@@ -206,19 +247,40 @@
         "prefix": "mysql-promise-query",
         "body": [
             "new Promise(function (resolve, reject){",
-            "   connection.query(",
-            "   '${1:query}',",
-            "   [${2:queryParameters}],",
-            "   function(error, ${3:data}) {",
-            "           if(error) reject(error);",
-            "           resolve($3)",
-            "       });",
+            "\tconnection.query(",
+            "\t'${1:query}',",
+            "\t[${2:queryParameters}],",
+            "\tfunction(error, ${3:data}) {",
+            "\t\t\tif(error) reject(error);",
+            "\t\t\tresolve($3)",
+            "\t\t});",
             "});"
         ],
         "description": "A MySQL query "
     },
     
     // Sequelize
+
+    "Sequelize Connection Configuration": {
+        "prefix": "sequelize-configure-connection",
+        "body": [
+            "const Sequelize = require('sequelize');",
+            "",
+            "const sequelize = new Sequelize('sequelize_chirpy', '${1:username}', '${2:password}', {",
+            "\thost: '${3:localhost}',",
+            "\tport: ${4:3306},",
+            "\tdialect: 'mysql',",
+            "\tpool: {",
+            "\t\tmax: 5,",
+            "\t\tmin: 0,",
+            "\t\tidle: 10000",
+            "\t}",
+            "});",
+            "",
+            "module.exports = sequelize;"
+        ],
+        "description": "Sequelize connection configuration"
+    },
 
     "Sequelize Model": {
         "prefix": "sequelize-model",
@@ -266,6 +328,61 @@
             "},"
         ],
         "description": "Sequelize property definition"
+    },
+
+    "Sequelize Find": {
+        "prefix": "sequelize-find-read-select",
+        "body": [
+            "${1:ModelName}.${2|findAll,findOne|}(${3:{ where: { ${4:columnName}: ${5:value} } }})",
+            ".then(function(${6:result}){",
+            "\t${0://logic here}",
+            "})",
+            ".catch(function(error){ console.log(error); });"
+        ],
+        "description": "Sequelize Find Behavior"
+    },
+
+    "Sequelize Create": {
+        "prefix": "sequelize-create-insert",
+        "body": [
+            "${1:ModelName}.create({",
+            "\t${2:propertiesHere}",
+            "})",
+            ".then(function(${3:result}){",
+            "\t${0://logic here}",
+            "})",
+            ".catch(function(error){ console.log(error); });"
+        ],
+        "description": "Sequelize Create Behavior"
+    },
+
+    "Sequelize Update": {
+        "prefix": "sequelize-update",
+        "body": [
+            "${1:ModelName}.create({",
+            "\t${2:propertiesHere}",
+            "},",
+            "{",
+            "\twhere: {${3:columnName}: ${4:value}}",
+            "})",
+            ".then(function(${5:result}){",
+            "\t${0://logic here}",
+            "})",
+            ".catch(function(error){ console.log(error); });"
+        ],
+        "description": "Sequelize Update Behavior"
+    },
+
+    "Sequelize Destroy": {
+        "prefix": "sequelize-delete-destroy",
+        "body": [
+            "${1:ModelName}.delete(${2:{ where: { ${3:columnName}: ${4:value} } }})",
+            ".then(function(${5:result}){",
+            "\t${0://logic here}",
+            "})",
+            ".catch(function(error){ console.log(error); });"
+        ],
+        "description": "Sequelize Destroy Behavior"
     },
 
     // Mocha Test snippets
