@@ -330,13 +330,13 @@
         "prefix": "sequelize-model",
         "body": [
             "module.exports = function(sequelize, DataTypes) {",
-            "\tlet ${1:ModelName} = sequelize.define('$1', {",
+            "\tlet ${1:ModelName} = sequelize.define('${1/^(.)(.*$)/${1:/downcase}$2/}', {",
             "\t\t$0",
             "\t});",
             "",
-            "\t$1.associate = function(models) {",
+            "\t${2:$1.associate = function(models) {\n\n\t\\};}",
             "",
-            "\t}",
+            "\treturn $1;",
             "};"
         ],
         "description": "Sequelize base model"
