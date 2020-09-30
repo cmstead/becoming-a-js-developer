@@ -249,6 +249,14 @@
 
     // MySQL
 
+    "MySQL Require": {
+        "prefix": "mysql-require",
+        "body": [
+            "${1|const,var|} mysql = require('mysql')"
+        ],
+        "description": "Require MySQL into your source"
+    },
+
     "MySQL Connection Setup": {
         "prefix": "mysql-connection-setup",
         "body": [
@@ -486,7 +494,7 @@
         "description": "Mocha 'it' test setup"
     },
     "Arrange/Act/Assert": {
-        "prefix": "arrange-act-assert",
+        "prefix": "aaa-arrange-act-assert",
         "body": [
             "// Arrange",
             "// Define the initial program state",
