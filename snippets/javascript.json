@@ -342,6 +342,43 @@
         "description": "Sequelize base model"
     },
 
+    "Sequelize Model Property": {
+        "prefix": "sequelize-model-property",
+        "body": [
+            "title: {",
+            "\ttype: DataTypes.STRING$0",
+            "},"
+        ],
+        "description": "Sequelize property definition"
+    },
+
+    "Sequelize Constraint": {
+        "prefix": "sequelize-constraint",
+        "body": [
+            "${1|allowNull,unique|}: $2"
+        ],
+        "description": "Add a sequelize constraint"
+    },
+
+    "Sequelize Validator": {
+        "prefix": "sequelize-validator",
+        "body": [
+            "${1|is,not,isEmail,isUrl,isAlpha,isAlphanumeric,isNumeric,isLowercase,isUppercase,notNull,isNull,notEmpty,equals,contains,notIn,isIn,notContains,len,isDate,isAfter,isBefore,max,min|}: $2"
+        ],
+        "description": "Add a sequelize validator"
+    },
+
+    "Sequelize Validator Function": {
+        "prefix": "sequelize-validator-function",
+        "body": [
+            "${1:validatorName}: function(value) {",
+            "\t$0",
+            "\treturn true;",
+            "}"
+        ],
+        "description": "Add a sequelize validator function"
+    },
+
     "Sequelize Model BelongsTo Association": {
         "prefix": "sequelize-model-belongs-to-association",
         "body": [
@@ -364,21 +401,11 @@
         "description": "Sequelize HasMany association definition"
     },
 
-    "Sequelize Model Property": {
-        "prefix": "sequelize-model-property",
-        "body": [
-            "title: {",
-            "\ttype: DataTypes.STRING$0",
-            "},"
-        ],
-        "description": "Sequelize property definition"
-    },
-
     "Sequelize Find": {
         "prefix": "sequelize-find-read-select",
         "body": [
-            "${1:ModelName}.${2|findAll,findOne|}(${3:{ where: { ${4:columnName}: ${5:value} } }})",
-            ".then(function(${6:result}){",
+            "${1:model}.${2:ModelName}.${3|findAll,findOne|}(${4:{ where: { ${5:columnName}: ${6:value} } }})",
+            ".then(function(${7:result}){",
             "\t${0://logic here}",
             "})",
             ".catch(function(error){ console.log(error); });"
@@ -389,10 +416,10 @@
     "Sequelize Create": {
         "prefix": "sequelize-create-insert",
         "body": [
-            "${1:ModelName}.create({",
-            "\t${2:propertiesHere}",
+            "${1:model}.${2:ModelName}.create({",
+            "\t${3:propertiesHere}",
             "})",
-            ".then(function(${3:result}){",
+            ".then(function(${4:result}){",
             "\t${0://logic here}",
             "})",
             ".catch(function(error){ console.log(error); });"
@@ -403,13 +430,13 @@
     "Sequelize Update": {
         "prefix": "sequelize-update",
         "body": [
-            "${1:ModelName}.create({",
-            "\t${2:propertiesHere}",
+            "${1:model}.${2:ModelName}.create({",
+            "\t${3:propertiesHere}",
             "},",
             "{",
-            "\twhere: {${3:columnName}: ${4:value}}",
+            "\twhere: {${4:columnName}: ${5:value}}",
             "})",
-            ".then(function(${5:result}){",
+            ".then(function(${6:result}){",
             "\t${0://logic here}",
             "})",
             ".catch(function(error){ console.log(error); });"
@@ -420,8 +447,8 @@
     "Sequelize Destroy": {
         "prefix": "sequelize-delete-destroy",
         "body": [
-            "${1:ModelName}.delete(${2:{ where: { ${3:columnName}: ${4:value} } }})",
-            ".then(function(${5:result}){",
+            "${1:model}.${2:ModelName}.delete(${3:{ where: { ${4:columnName}: ${5:value} } }})",
+            ".then(function(${6:result}){",
             "\t${0://logic here}",
             "})",
             ".catch(function(error){ console.log(error); });"
