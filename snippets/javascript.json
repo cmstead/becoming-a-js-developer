@@ -412,13 +412,29 @@
     "Sequelize Find": {
         "prefix": "sequelize-find-read-select",
         "body": [
-            "${1:model}.${2:ModelName}.${3|findAll,findOne|}(${4:{ where: { ${5:columnName}: ${6:value} } }})",
-            ".then(function(${7:result}){",
+            "${1:model}.${2:ModelName}.${3|findAll,findOne|}(${4:{ \n\twhere: { ${5:columnName}: ${6:value} }$7 }})",
+            ".then(function(${8:result}){",
             "\t${0://logic here}",
             "})",
             ".catch(function(error){ console.log(error); });"
         ],
         "description": "Sequelize Find Behavior"
+    },
+
+    "Sequelize Include": {
+        "prefix": "sequelize-find-include",
+        "body": [
+            "include: [${1:models}]"
+        ],
+        "description": "Sequelize include option definition"
+    },
+
+    "Sequelize Include Models": {
+        "prefix": "sequelize-find-include-models",
+        "body": [
+            "{ model: ${1:ModelObject} }"
+        ],
+        "description": "Sequelize model definition for includes"
     },
 
     "Sequelize Create": {
