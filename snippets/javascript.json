@@ -387,14 +387,20 @@
         "description": "Add a sequelize validator function"
     },
 
+    "Sequelize association": {
+        "prefix": "sequelize-association",
+        "body": [
+            "${1:ModelName}.associate = function(models){",
+            "$0",
+            "};"
+        ],
+        "description": "Sequelize association setup"
+    },
+
     "Sequelize Model BelongsTo Association": {
         "prefix": "sequelize-model-belongs-to-association",
         "body": [
-            "${1:ModelName}.belongsTo(models.${2:AssociatedModelName}, {",
-            "\tforeignKey: {",
-            "\t\tallowNull: ${3|true,false|}",
-            "\t}",
-            "});"
+            "${1:ModelName}.belongsTo(models.${2:AssociatedModelName}${3:, {\n\tforeignKey:${4:foreignKeyName}\n}});"
         ],
         "description": "Sequelize BelongsTo association definition"
     },
@@ -402,9 +408,7 @@
     "Sequelize Model HasMany Association": {
         "prefix": "sequelize-model-has-many-association",
         "body": [
-            "${1:ModelName}.hasMany(models.${2:AssociatedModelName}, {",
-            "\t$0",
-            "});"
+            "${1:ModelName}.hasMany(models.${2:AssociatedModelName}${3:, {\n\tforeignKey:${4:foreignKeyName}\n}});"
         ],
         "description": "Sequelize HasMany association definition"
     },
