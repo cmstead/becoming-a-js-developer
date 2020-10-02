@@ -412,7 +412,7 @@
     "Sequelize Find": {
         "prefix": "sequelize-find-read-select",
         "body": [
-            "${1:model}.${2:ModelName}.${3|findAll,findOne|}(${4:{ \n\twhere: { ${5:columnName}: ${6:value} }$7 }})",
+            "${1:model}.${2:ModelName}.${3|findAll,findOne|}(${4:{ \n\twhere: { ${5:columnName}: ${6:value} }${7:extraOptions} }})",
             ".then(function(${8:result}){",
             "\t${0://logic here}",
             "})",
