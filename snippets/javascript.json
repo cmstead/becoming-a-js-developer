@@ -400,7 +400,7 @@
     "Sequelize Model BelongsTo Association": {
         "prefix": "sequelize-model-belongs-to-association",
         "body": [
-            "${1:ModelName}.belongsTo(models.${2:AssociatedModelName}${3:, {\n\tforeignKey:${4:foreignKeyName}\n}});"
+            "${1:ModelName}.belongsTo(models.${2:AssociatedModelName}${3:, {\n\tallowNull:${4|true,false|}\n}});"
         ],
         "description": "Sequelize BelongsTo association definition"
     },
