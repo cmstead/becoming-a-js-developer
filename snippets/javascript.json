@@ -136,6 +136,24 @@
         "description": "Inquirer list definition"
     },
 
+    // ESLint
+
+    "ESLint Ignore Line": {
+        "prefix": "eslint-ignore-disable-line",
+        "body": [
+            "// eslint-disable-line ${1:rule-name}"
+        ],
+        "description": "ESLint ignore a line for given rule(s)"
+    },
+
+    "ESLint Ignore Block or File": {
+        "prefix": "eslint-ignore-disable-line",
+        "body": [
+            "/* eslint-disable-line ${1:rule-name} */"
+        ],
+        "description": "ESLint ignore a block for given rule(s)"
+    },
+
     // Express snippets
 
     "Express App Setup": {
@@ -148,6 +166,15 @@
         ],
         "description": "Express app setup block"
     },
+
+    "Express Static Folder Middleware": {
+        "prefix": "express-static-middleware",
+        "body": [
+            "${1|app,server|}.use(\"/${2:path-alias}\", express.static(__dirname + \"/${3:static-content-folder-name}\"))"
+        ],
+        "description": "Middleware for serving static content from a folder"
+    },
+
     "Express Parser Middleware": {
         "prefix": "express-middleware-body-parse-json",
         "body": [
@@ -196,7 +223,7 @@
     "Express Response": {
         "prefix": "express-response",
         "body": [
-            "response.${1|send,json,render,sendFile,end|}(${2:value});"
+            "response.${1|send,json,render,sendFile,status,end|}(${2:value});"
         ],
         "description": "Express send response"
     },
