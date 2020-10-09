@@ -1,14 +1,5 @@
 {
-    "JQuery Script Include": {
-        "scope": "html",
-        "prefix": "jquery-script-include-cdn",
-        "body": [
-            "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>"
-        ],
-        "description": "Include JQuery in your HTML document"
-    },
     "JQuery Element Selector": {
-        "scope": "javascript,html",
         "prefix": "jquery-element-selector",
         "body": [
             "$(${1:'${2|.,#|}${3:identifier}'})$0"
@@ -16,7 +7,6 @@
         "description": "Add JQuery element selector"
     },
     "JQuery Event Handler": {
-        "scope": "javascript,html",
         "prefix": "jquery-on-event-handler",
         "body": [
             "$(${1:'${2|.,#|}${3:identifier}'}).on('${4|click,change,keydown,keyup,mouseover,mousedown,mouseup|}', function(event){",
@@ -26,7 +16,6 @@
         "description": "Add JQuery event handler"
     },
     "JQuery Ajax": {
-        "scope": "javascript,html",
         "prefix": "jquery-ajax-setup-request",
         "body": [
             "$.${1|get,post,put,delete|}(${2|'url',{ url: '' }|}${3:, ${4:data}})",
@@ -40,7 +29,6 @@
         "description": "Add JQuery ajax method "
     },
     "JQuery Document Ready": {
-        "scope": "javascript,html",
         "prefix": "jquery-document-ready",
         "body": [
             "$(document).ready(function(){",

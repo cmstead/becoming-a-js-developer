@@ -1,0 +1,16 @@
+{
+    "General Snippet snippet": {
+        "prefix": "snippet",
+        "body": [
+            "\"$1\": {",
+            "\t\"scope\": \"${2|css,html,javascript,json|}\",",
+            "\t\"prefix\": \"$3\",",
+            "\t\"body\": [",
+            "\t\t$4",
+            "\t],",
+            "\t\"description\": \"$5\"",
+            "},"
+        ],
+        "description": "A snippet for creating new snippets"
+    }
+}

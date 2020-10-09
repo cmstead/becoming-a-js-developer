@@ -1,0 +1,23 @@
+{
+    "Clearfix": {
+        "prefix": "css-clearfix",
+        "body": [
+            ".${1:clearfix}::after {",
+            "\tcontent: \"\";",
+            "\tclear: both;",
+            "\tdisplay: table;",
+            "}"
+        ],
+        "description": "CSS Clearfix "
+    },
+
+    "Block": {
+        "prefix": "css-style-block",
+        "body": [
+            "${1:selector} {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Create a new css style block"
+    }
+}

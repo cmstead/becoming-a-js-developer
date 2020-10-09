@@ -1,0 +1,102 @@
+    // Vanilla JS
+
+    "Instantiable Object (Constructor + Prototype)": {
+        "prefix": "object-constructor-instantiable",
+        "body": [
+            "function ${1:MyObject}($2){",
+            "\t$3",
+            "}",
+            "",
+            "$1.prototype = {",
+            "\t$0",
+            "};"
+        ],
+        "description": "Instantiable prototype-style object"
+    },
+
+    "Prototype Method": {
+        "prefix": "object-method-prototype",
+        "body": [
+            "${1:myMethod}: function($2) {",
+            "\t$0",
+            "},"
+        ],
+        "description": "Method for a prototype-style object"
+    },
+
+    // Classes
+
+    "Class": {
+        "prefix": "class",
+        "body": [
+            "class ${1:ClassName}${2: extends ${3:ParentClass}}{",
+            "\t${4:// Class logic here}",
+            "}"
+        ],
+        "description": "Core class setup"
+    },
+
+    "Class Constructor": {
+        "prefix": "class-constructor-ctor",
+        "body": [
+            "constructor(${1:parameters}){",
+            "\t${2:// Constructor logic goes here}",
+            "}"
+        ],
+        "description": "Class constructor"
+    },
+
+    "Class Method": {
+        "prefix": "class-method",
+        "body": [
+            "${1:methodName}(${2:parameters}){",
+            "\t${3:// Logic goes here}",
+            "}"
+        ],
+        "description": "Class method"
+    },
+
+    // Promises
+
+    "New Promise": {
+        "prefix": "new-promise",
+        "body": [
+            "new Promise(function(resolve, reject){",
+            "\t$0",
+            "});"
+        ],
+        "description": "Create a new promise"
+    },
+
+    "Promise then": {
+        "prefix": "promise-then",
+        "body": [
+            ".then(function(${1:result}){",
+            "\t$0",
+            "})"
+        ],
+        "description": "Promise then function call"
+    },
+
+    "Promise catch": {
+        "prefix": "promise-catch",
+        "body": [
+            ".catch(function(error){",
+            "\t$0",
+            "});"
+        ],
+        "description": "Promise catch function call"
+    },
+
+    "Promise returning call": {
+        "prefix": "promise-returning-function-call",
+        "body": [
+            "${1:functionName}(${2:parameters})",
+            ".then(function(${3:result}){",
+            "\t$0",
+            "})",
+            ".catch(function(error){ console.log(error); });"
+        ],
+        "description": "Promise handling for an async, promise returning function call"
+    },
+
