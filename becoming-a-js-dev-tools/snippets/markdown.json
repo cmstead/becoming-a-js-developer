@@ -1,0 +1,25 @@
+{
+    "To do item": {
+        "prefix": "to-do-checkbox",
+        "body": [
+            "- [${1|,X|}] ${2:Text here}"
+        ],
+        "description": ""
+    },
+
+    "Inline Code": {
+        "prefix": "inline-code",
+        "body": [
+            "`${1:code here}`"
+        ],
+        "description": "Inline code example"
+    },
+
+    "YouTube Video Link": {
+		"prefix": "youtube-video-link",
+		"body": [
+			"[![${1:Video Alt Text}](https://img.youtube.com/vi/${2:Video ID}/0.jpg)](https://www.youtube.com/watch?v=$2)"
+		],
+		"description": "Insert a YouTube video link"
+	},
+}

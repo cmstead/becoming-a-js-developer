@@ -6,33 +6,45 @@ Both the Becoming a JS Developer project, and this extension are works in progre
 
 ## Installation ##
 
-
+1. Open the extension panel in Visual Studio Code
+2. Search for "Becoming a JS Developer"
+3. Click install
+4. Make awesome stuff, faster!
 
 ## Features ##
 
-The features are currently limited to just snippets. As important tool ideas emerge they are likely to be added.
+The features are currently limited to snippets. As important tool ideas emerge they are likely to be added.
 
 ### Snippets ###
 
 There are currently snippets for the following:
 
-CSS:
-    Bootstrap html link
-    Clearfix
-    Style block
-Javascript (vanilla):
-    Prototypal objects
-    Classes
-    Promises
-Javascript Libraries (non-jquery, mostly node):
-    Inquirer
-    ESLint ignore comments
-    Express
-    Mongoose
-    MySQL
-    Sequelize
-    Mocha
-    Chai
-    Arrange/Act/Assert (test-structure comments)
-Snippets:
-    "Snippet" snippet - a snippet for creating new snippets
+- CSS:
+    - Bootstrap html link
+    - Clearfix
+    - Style block
+- Javascript (vanilla):
+    - Prototypal objects
+    - Classes
+    - Promises
+- Javascript Libraries (non-jquery, mostly node):
+    - Inquirer
+    - ESLint ignore comments
+    - Express
+    - Mongoose
+    - MySQL
+    - Sequelize
+    - Mocha
+    - Chai
+    - Arrange/Act/Assert (test-structure comments)
+- JQuery
+    - JQuery script tag
+    - Document ready
+    - Selectors
+    - DOM Manipulation
+    - CSS and Class handling
+    - Element Attribute and Data access
+    - Event Handling
+    - Ajax
+- Snippets:
+    - "Snippet" snippet - a snippet for creating new snippets

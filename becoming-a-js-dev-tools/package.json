@@ -1,9 +1,13 @@
 {
     "name": "becoming-a-js-dev-tools",
-    "displayName": "Becoming a JS Dev Core",
+    "displayName": "Becoming a JS Dev Tools",
     "description": "Tools for New JS Developers -- full-stack snippets to accompany the Becoming a JS Developer project",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "publisher": "cmstead",
+    "repository": {
+        "type": "GitHub",
+        "url": "https://github.com/cmstead/becoming-a-js-developer.git"
+    },
     "engines": {
         "vscode": "^1.12.0"
     },
@@ -38,11 +42,11 @@
             },
             {
                 "language": "javascript",
-                "path": "./snippets/javascript.json"
+                "path": "./snippets/javascript-core.json"
             },
             {
                 "language": "javascript",
-                "path": "./snippets/javascript-core.json"
+                "path": "./snippets/javascript.json"
             },
             {
                 "language": "javascript",
@@ -52,6 +56,10 @@
                 "language": "json",
                 "path": "./snippets/snippet-snippet.json"
             },
+            {
+                "language": "markdown",
+                "path": "./snippets/markdown.json"
+            }
         ]
     }
 }

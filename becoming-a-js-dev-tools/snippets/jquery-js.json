@@ -1,40 +1,63 @@
 {
-    "JQuery Element Selector": {
+    "jQuery Element Selector": {
         "prefix": "jquery-element-selector",
         "body": [
             "$(${1:'${2|.,#|}${3:identifier}'})$0"
         ],
-        "description": "Add JQuery element selector"
+        "description": "Add jQuery element selector"
     },
-    "JQuery Event Handler": {
+    "jQuery Element Attributes": {
+        "prefix": "jquery-element-attribute-data",
+        "body": [
+            ".${1|attr,data|}($2$3{, $4})$0"
+        ],
+        "description": "Interact with jQuery element attributes or data"
+    },
+    "jQuery Element DOM Manipulation": {
+        "prefix": "jquery-element-dom-action-append-prepend-remove",
+        "body": [
+            ".${1|append,prepend,html,text,remove,detach,empty|}($2)$0"
+        ],
+        "description": "Apply DOM action (append, prepend, remove)"
+    },
+    "jQuery CSS and Class Management": {
+        "prefix": "jquery-css-class",
+        "body": [
+            ".${1|css,addClass,hasClass,removeClass,toggleClass|}($2)$0"
+        ],
+        "description": "jQuery CSS and class methods"
+    },
+    "jQuery Event Handler": {
         "prefix": "jquery-on-event-handler",
         "body": [
-            "$(${1:'${2|.,#|}${3:identifier}'}).on('${4|click,change,keydown,keyup,mouseover,mousedown,mouseup|}', function(event){",
+            "$(${1:'${2|.,#|}${3:identifier}'}).on('${4|click,change,keydown,keyup,mouseover,mousedown,mouseup|}', function(${5:event}){",
             "\t$0",
             "});"
         ],
-        "description": "Add JQuery event handler"
+        "description": "Add jQuery event handler"
     },
-    "JQuery Ajax": {
-        "prefix": "jquery-ajax-setup-request",
+    "jQuery Ajax": {
+        "prefix": "jquery-ajax-request-post-get-put-delete",
         "body": [
-            "$.${1|get,post,put,delete|}(${2|'url',{ url: '' }|}${3:, ${4:data}})",
-            ".then(function(data){",
-            "\t$5",
+            "$.${1|get,post,put,delete|}(${2:url}, { ",
+            "\tmethod: '${3|POST,GET,PUT,DELETE|}'${4:,\n\tdata: $5}",
             "})",
-            "fail(function(error){",
+            ".then(function(data){",
             "\t$6",
+            "})",
+            ".fail(function(error){",
+            "\t$7",
             "});"
         ],
-        "description": "Add JQuery ajax method "
+        "description": "Add jQuery ajax method "
     },
-    "JQuery Document Ready": {
+    "jQuery Document Ready": {
         "prefix": "jquery-document-ready",
         "body": [
             "$(document).ready(function(){",
-            "$1",
+            "\t$1",
             "});"
         ],
-        "description": "JQuery document ready statement"
+        "description": "jQuery document ready statement"
     }
 }
