@@ -48,7 +48,7 @@ This will ensure your `.env` file doesn't get committed to your repository.
 The package itself is a one-and-done solution. once the setup steps are complete, do the following to set up your environment variables, and access them in your program. Keep in mind, you should do this inside the main file for your application. Don't reconfigure your environment over and over. It won't actually make things work differently.
 
 ```javascript
-require('dotenv').configure();
+require('dotenv').config();
 
 // environmentValueOrDefault is a helper function 
 // found just below this example in the document.
