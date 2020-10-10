@@ -2,7 +2,7 @@
     "name": "becoming-a-js-dev-tools",
     "displayName": "Becoming a JS Dev Tools",
     "description": "Tools for New JS Developers -- full-stack snippets to accompany the Becoming a JS Developer project",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "publisher": "cmstead",
     "repository": {
         "type": "GitHub",
