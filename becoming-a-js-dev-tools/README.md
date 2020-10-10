@@ -24,6 +24,10 @@ There are currently snippets for the following:
     - Clearfix
     - Style block
 - Javascript (vanilla):
+    - Variable with const/let/var selection
+    - Parameter with optional default value
+    - Object literals + property snippet
+    - Array literals
     - Prototypal objects
     - Classes
     - Promises
@@ -31,6 +35,7 @@ There are currently snippets for the following:
     - Inquirer
     - ESLint ignore comments
     - Express
+    - Mongo
     - Mongoose
     - MySQL
     - Sequelize

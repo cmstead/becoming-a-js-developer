@@ -1,5 +1,51 @@
 {
-        // Vanilla JS
+    // Base constructs
+
+    "Variable": {
+        "prefix": "var-const-let",
+        "body": [
+            "${1|const,let,var|} = $2;"
+        ],
+        "description": "Basic variable"
+    },
+
+    "Parameter": {
+        "prefix": "parameter-argument",
+        "body": [
+            "${1:name}${2: = ${3:defaultValue}}"
+        ],
+        "description": "Parameter with optional default value"
+    },
+
+    // Array literal
+
+    "Array Literal": {
+        "prefix": "array-literal",
+        "body": [
+            "[ $1 ]"
+        ],
+        "description": "New array literal"
+    },
+
+    // Object Literals
+
+    "Object Literal": {
+        "prefix": "object-literal",
+        "body": [
+            "{ $1 }"
+        ],
+        "description": "New object literal"
+    },
+
+    "Object Property": {
+        "prefix": "object-property",
+        "body": [
+            "${1:key}: ${2:value}"
+        ],
+        "description": "New object property"
+    },
+
+    // Vanilla JS
 
     "Instantiable Object (Constructor + Prototype)": {
         "prefix": "object-constructor-instantiable",

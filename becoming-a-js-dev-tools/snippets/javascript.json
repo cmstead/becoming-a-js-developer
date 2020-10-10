@@ -135,6 +135,87 @@
         "description": "Setup for an express route file"
     },
 
+    // Mongo Snippets
+
+    "Mongo Require": {
+        "prefix": "mongo-client-require",
+        "body": [
+            "const MongoClient = require('mongodb').MongoClient;"
+        ],
+        "description": "Mongo client require"
+    },
+
+    "Mongo Connection": {
+        "prefix": "mongo-connection-setup",
+        "body": [
+            "const url = 'mongodb://localhost:27017';",
+            "const dbName = 'myproject';",
+            "let db = null",
+            "",
+            "MongoClient.connect(url, function(err, client) {",
+            "\tif(error) throw error;",
+            "",
+            "\tdb = client.db(dbName);",
+            "});"
+        ],
+        "description": "Mongo client setup"
+    },
+
+    "Mongo Collection Setup": {
+        "prefix": "mongo-collection-setup",
+        "body": [
+            "const collect = db.collection('${1:collectionName}');"
+        ],
+        "description": "Mongo set up access to collection"
+    },
+
+    "Mongo Collection Insert": {
+        "prefix": "mongo-insert-create",
+        "body": [
+            "collection.${1|insertOne,insertMany|}($2)",
+            "\t.toArray(function(error, documents){",
+            "\t\t$0",
+            "\t});"
+        ],
+        "description": "Mongo find documents in collection"
+    },
+
+    "Mongo Collection Find": {
+        "prefix": "mongo-insert-create",
+        "body": [
+            "collection.${1|insert,insertMany|}($2)",
+            "\t.toArray(function(error, result){",
+            "\t\t$0",
+            "\t});"
+        ],
+        "description": "Mongo insert document(s) in collection"
+    },
+
+    "Mongo Collection Update": {
+        "prefix": "mongo-update",
+        "body": [
+            "collection.updateOne({ ${1:queryKey}: ${2:value} },",
+            "{",
+            "\t$set: { $3 }",
+            "})",
+            "\t.toArray(function(error, result){",
+            "\t\t$0",
+            "\t});"
+        ],
+        "description": "Mongo find documents in collection"
+    },
+
+    "Mongo Collection Delete": {
+        "prefix": "mongo-delete",
+        "body": [
+            "collection.${1|deleteOne,deleteMany|}({ ${1:queryKey}: ${2:value} })",
+            "\t.toArray(function(error, result){",
+            "\t\t$0",
+            "\t});"
+        ],
+        "description": "Mongo find documents in collection"
+    },
+
     // Mongoose Snippets
 
     "Mongoose Model": {
