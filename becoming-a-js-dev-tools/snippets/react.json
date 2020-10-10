@@ -1,0 +1,48 @@
+{
+    "React Class Component": {
+        "prefix": "react-class-component",
+        "body": [
+            "import React, { Component } from 'react';",
+            "export default class ${1:ComponentName} extends Component{",
+            "",
+            "\tconstructor(props) {",
+            "\t\tsuper(props);",
+            "\t\tthis.state = {};",
+            "\t}",
+            "",
+            "\trender(){",
+            "\t\treturn (${2:null});",
+            "\t}",
+            "",
+            "}",
+            ""
+        ],
+        "description": "Base react class-based component"
+    },
+
+    "React function component": {
+        "prefix": "react-function-component",
+        "body": [
+            "export default render (props) {",
+            "\treturn (${1:null})",
+            "}"
+        ],
+        "description": "Base react function-based component"
+    },
+
+    "React Hook By Name": {
+        "prefix": "react-hook",
+        "body": [
+            "${1|useState,useEffect,useContext,useReducer|}"
+        ],
+        "description": "Pick a react hook by name"
+    },
+
+    "React useState": {
+        "prefix": "react-usestate",
+        "body": [
+            "[${1:stateName}, ${2:set${1/^(.)(.*)$/${1:/upcase}$2/}}] = useState(${3:initialState});"
+        ],
+        "description": "React useState hook use"
+    },
+}
