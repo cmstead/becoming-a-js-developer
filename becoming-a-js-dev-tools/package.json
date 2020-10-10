@@ -53,6 +53,14 @@
                 "path": "./snippets/jquery-js.json"
             },
             {
+                "language": "javascriptreact",
+                "path": "./snippets/react.json"
+            },
+            {
+                "language": "react",
+                "path": "./snippets/react.json"
+            },
+            {
                 "language": "json",
                 "path": "./snippets/snippet-snippet.json"
             },

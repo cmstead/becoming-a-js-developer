@@ -45,4 +45,30 @@
         ],
         "description": "React useState hook use"
     },
+
+    "React useEffect": {
+        "prefix": "react-useeffect",
+        "body": [
+            "useEffect(() => {",
+            "\t$0",
+            "}${1:, ${2:[]}});"
+        ],
+        "description": "React useEffect hook use"
+    },
+
+    "React useContext": {
+        "prefix": "react-usecontext",
+        "body": [
+            "const ${1:name} = useContext(${2:contextName});"
+        ],
+        "description": "React useContext hook use"
+    },
+
+    "React useReducer": {
+        "prefix": "react-usereducer",
+        "body": [
+            "const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState}${3:, ${4:initFunction}});"
+        ],
+        "description": "React useReducer hook use"
+    },
 }
