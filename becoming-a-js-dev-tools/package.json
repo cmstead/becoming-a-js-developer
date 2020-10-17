@@ -14,6 +14,11 @@
     "categories": [
         "Snippets"
     ],
+    "activationEvents": [
+		"onCommand:cmstead.becoming-a-js-dev-tools.convertVariableType",
+		"onCommand:cmstead.becoming-a-js-dev-tools.surroundWith"
+    ],
+    "main": "./extension",
     "contributes": {
         "snippets": [
             {

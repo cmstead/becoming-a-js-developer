@@ -4,7 +4,7 @@
     "Variable": {
         "prefix": "var-const-let",
         "body": [
-            "${1|const,let,var|} = $2;"
+            "${1|const,let,var|} = ${TM_SELECTED_TEXT}$0;"
         ],
         "description": "Basic variable"
     },
@@ -17,12 +17,22 @@
         "description": "Parameter with optional default value"
     },
 
+    "Function": {
+        "prefix": "function",
+        "body": [
+            "${1|function,async function|}(${2:parameters}) {",
+            "\t${TM_SELECTED_TEXT}$0",
+            "}"
+        ],
+        "description": "New function"
+    },
+
     // Array literal
 
     "Array Literal": {
         "prefix": "array-literal",
         "body": [
-            "[ $1 ]"
+            "[ $0 ]"
         ],
         "description": "New array literal"
     },
@@ -32,7 +42,7 @@
     "Object Literal": {
         "prefix": "object-literal",
         "body": [
-            "{ $1 }"
+            "{ $0 }"
         ],
         "description": "New object literal"
     },
@@ -109,7 +119,7 @@
         "prefix": "new-promise",
         "body": [
             "new Promise(function(resolve, reject){",
-            "\t$0",
+            "\t${TM_SELECTED_TEXT}$0",
             "});"
         ],
         "description": "Create a new promise"
@@ -140,7 +150,7 @@
         "body": [
             "${1:functionName}(${2:parameters})",
             ".then(function(${3:result}){",
-            "\t$0",
+            "\t${TM_SELECTED_TEXT}$0",
             "})",
             ".catch(function(error){ console.log(error); });"
         ],

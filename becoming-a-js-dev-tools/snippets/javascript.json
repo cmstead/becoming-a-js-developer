@@ -137,83 +137,69 @@
 
     // Mongo Snippets
 
-    "Mongo Require": {
+    "MongoJS Require": {
         "prefix": "mongo-client-require",
         "body": [
-            "const MongoClient = require('mongodb').MongoClient;"
+            "const mongojs = require('mongojs');"
         ],
-        "description": "Mongo client require"
+        "description": "MongoJS client require"
     },
 
-    "Mongo Connection": {
+    "MongoJS Connection": {
         "prefix": "mongo-connection-setup",
         "body": [
-            "const url = 'mongodb://localhost:27017';",
-            "const dbName = 'myproject';",
-            "let db = null",
-            "",
-            "MongoClient.connect(url, function(err, client) {",
-            "\tif(error) throw error;",
-            "",
-            "\tdb = client.db(dbName);",
+            "const dbUrl = '${1:dbName}';",
+            "const collections = [${2:collections}]",
+            "const db = mongojs(dbUrl, collections);"
+        ],
+        "description": "MongoJS client setup"
+    },
+
+    "MongoJS Collection Insert": {
+        "prefix": "mongo-insert-create-save",
+        "body": [
+            "db.${1:collection}.save(${2:data}, function(error, data) {",
+            "\t${3:if(error) {\n\t\treject(error);\n\t} else {\n\t\tresolve(data)\n\t}}",
             "});"
         ],
-        "description": "Mongo client setup"
+        "description": "MongoJS find documents in collection"
     },
 
-    "Mongo Collection Setup": {
-        "prefix": "mongo-collection-setup",
+    "MongoJS Collection Find": {
+        "prefix": "mongo-find-read",
         "body": [
-            "const collect = db.collection('${1:collectionName}');"
+            "db.${1:collection}.${2|find,findOne|}(",
+            "\t{ ${3:conditions} }${4:)\n\t.sort(\n\t{ ${5: criteria} }},",
+            "\tfunction(error, data) {",
+            "\t\t${6:if(error) {\n\t\t\treject(error);\n\t\t} else {\n\t\t\tresolve(data)\n\t\t}}",
+            "})"
         ],
-        "description": "Mongo set up access to collection"
+        "description": "MongoJS find document(s) in collection"
     },
 
-    "Mongo Collection Insert": {
-        "prefix": "mongo-insert-create",
-        "body": [
-            "collection.${1|insertOne,insertMany|}($2)",
-            "\t.toArray(function(error, documents){",
-            "\t\t$0",
-            "\t});"
-        ],
-        "description": "Mongo find documents in collection"
-    },
-
-    "Mongo Collection Find": {
-        "prefix": "mongo-insert-create",
-        "body": [
-            "collection.${1|insert,insertMany|}($2)",
-            "\t.toArray(function(error, result){",
-            "\t\t$0",
-            "\t});"
-        ],
-        "description": "Mongo insert document(s) in collection"
-    },
-
-    "Mongo Collection Update": {
+    "MongoJS Collection Update": {
         "prefix": "mongo-update",
         "body": [
-            "collection.updateOne({ ${1:queryKey}: ${2:value} },",
-            "{",
-            "\t$set: { $3 }",
-            "})",
-            "\t.toArray(function(error, result){",
-            "\t\t$0",
-            "\t});"
+            "db.${1:collection}.${2|update,updateMany|}(",
+            "\t{ ${3:conditions} }, ",
+            "\t{ $set: { ${4:values} }}",
+            "\tfunction(error, data) {",
+            "\t\t${5:if(error) {\n\t\t\treject(error);\n\t\t} else {\n\t\t\tresolve(data)\n\t\t}}",
+            "});"
         ],
-        "description": "Mongo find documents in collection"
+        "description": "MongoJS find documents in collection"
     },
 
-    "Mongo Collection Delete": {
+    "MongoJS Collection Delete": {
         "prefix": "mongo-delete",
         "body": [
-            "collection.${1|deleteOne,deleteMany|}({ ${1:queryKey}: ${2:value} })",
-            "\t.toArray(function(error, result){",
-            "\t\t$0",
-            "\t});"
+            "db.${1:collection}.${2|deleteOne,deleteMany|}(",
+            "\t{ ${3:conditions} }",
+            "\tfunction(error, data) {",
+            "\t\t${3:if(error) {\n\t\t\treject(error);\n\t\t} else {\n\t\t\tresolve(data)\n\t\t}}",
+            "});"
         ],
-        "description": "Mongo find documents in collection"
+        "description": "MongoJS update documents in collection"
     },
 
     // Mongoose Snippets
@@ -278,8 +264,8 @@
             "",
             "connection.connect(function (err) {",
             "\tif (err) {",
-            "\t  console.error(`error connecting: ${err.stack}`);",
-            "\t  return;",
+            "\t\tconsole.error(`error connecting: ${err.stack}`);",
+            "\t\treturn;",
             "\t}",
             "\tconsole.log(`connected as id  ${connection.threadId}`);",
             "});"
