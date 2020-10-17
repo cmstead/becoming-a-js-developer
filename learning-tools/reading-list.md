@@ -2,6 +2,10 @@
 
 There are a number of wonderful learning materials out there. This is a list of books I recommend which are valuable both now, and in the future. I have tried to limit the books here to volumes which are unlikely to fall out of date simply because of the natural changes which occur in the software development world.
 
+## Online Resources ##
+
+[Randall Kanna -- Online CS Program for Free](https://twitter.com/RandallKanna/status/1274133745222615041?s=20)
+
 ## JavaScript ##
 
 - Eloquent JavaScript **(Beginner/Intermediate)**
