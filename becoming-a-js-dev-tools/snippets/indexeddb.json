@@ -1,0 +1,84 @@
+{
+    "IndexedDB Open DB Connection": {
+        "prefix": "indexeddb-open-db-connection",
+        "body": [
+            "const request = window.indexedDB.open(\"${1:databaseName}\", 1);",
+            "let db = null;",
+            "",
+            "request.onupgradeneeded = function(event) {",
+            "\tconst db = event.target.result;",
+            "\tconst $1Store = db.createObjectStore(\"$1\", {keyPath: \"${2:keyPathName}\"});",
+            "",
+            "\t$1Store.createIndex(\"${3:indexName}\", \"${4:indexKeyPathName}\");",
+            "};",
+            "",
+            "request.onsuccess = function() {",
+            "\tdb = request.result;",
+            "};"
+        ],
+        "description": "Open a new connection to an IndexedDB database"
+    },
+    "IndexedDB New Transaction": {
+        "prefix": "indexeddb-new-transaction",
+        "body": [
+            "const transaction = db.transaction([\"${1:dataStoreName}\"], \"${2|readonly,readwrite,versionchange|}\");",
+            "const $1Store = transaction.objectStore(\"$1\");",
+            "const ${3:indexName} = toDoListStore.index(\"$3\");",
+            "",
+            "transaction.oncomplete = function(event) {",
+            "\t${4:// work to do when transaction is complete}",
+            "};",
+            "",
+            "transaction.onerror = function(event) {",
+            "\t${5:// work to do if transaction fails}",
+            "};",
+            ""
+        ],
+        "description": "Create a new IndexedDB transaction"
+    },
+    "IndexedDB Add Data": {
+        "prefix": "indexeddb-add-data",
+        "body": [
+            "toDoListStore.add(${1:dataValue});"
+        ],
+        "description": "IndexedDB add new data value"
+    },
+    "IndexedDB Get Data": {
+        "prefix": "indexeddb-get-data",
+        "body": [
+            "${1:dataReaderName}.${2|get,getAll|}(${3:value});"
+        ],
+        "description": "IndexedDB get data from store"
+    },
+    "IndexedDB Create Cursor Request": {
+        "prefix": "indexeddb-create-cursor-request",
+        "body": [
+            "const cursorRequest = ${1:dataStoreName}.openCursor();",
+            "",
+            "cursorRequest.onsuccess = function(event) {",
+            "\tconst cursor = event.target.result;",
+            "\tif(Boolean(cursor)){",
+            "\t\t$0",
+            "\t\tcursor.continue();",
+            "\t}",
+            "};"
+        ],
+        "description": "IndexedDB create a new cursor request"
+    },
+    "IndexedDB Cursor Interactions": {
+        "prefix": "indexeddb-cursor-continue-update-delete-advance",
+        "body": [
+            "cursor.${1:${2|continue,update,delete,advance|}($3)};$0"
+        ],
+        "description": "IndexedDB Cursor interactions"
+    },
+    "IndexedDB Event Handler": {
+        "prefix": "indexeddb-event-handler",
+        "body": [
+            "${1:requestName}.${2|onsuccess,onerror,oncomplete,onupgradeneeded|} = function(${3:event}) {",
+            "\t$0",
+            "};"
+        ],
+        "description": "Add event handler to request"
+    },
+}

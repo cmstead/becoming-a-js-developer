@@ -22,10 +22,6 @@
     "contributes": {
         "snippets": [
             {
-                "language": "code-snippets",
-                "path": "./snippets/snippet-code-snippet.json"
-            },
-            {
                 "language": "css",
                 "path": "./snippets/css.json"
             },
@@ -39,11 +35,19 @@
             },
             {
                 "language": "html",
+                "path": "./snippets/indexeddb.json"
+            },
+            {
+                "language": "html",
                 "path": "./snippets/javascript-core.json"
             },
             {
                 "language": "html",
                 "path": "./snippets/jquery-js.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/indexeddb.json"
             },
             {
                 "language": "javascript",
@@ -62,11 +66,8 @@
                 "path": "./snippets/react.json"
             },
             {
-                "language": "react",
-                "path": "./snippets/react.json"
-            },
-            {
                 "language": "json",
+                "extensions": [".json", ".code-snippets"],
                 "path": "./snippets/snippet-snippet.json"
             },
             {
