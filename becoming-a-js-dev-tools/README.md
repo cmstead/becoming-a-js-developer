@@ -23,6 +23,8 @@ There are currently snippets for the following:
     - Bootstrap html link
     - Clearfix
     - Style block
+- Javascript Browser API:
+    - IndexedDB
 - Javascript (vanilla):
     - Variable with const/let/var selection
     - Parameter with optional default value
