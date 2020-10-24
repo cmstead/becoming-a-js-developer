@@ -26,6 +26,7 @@ There are currently snippets for the following:
     - Bootstrap html link
     - Clearfix
     - Style block
+    - BEM naming format snippet
 - Javascript/Browser API:
     - IndexedDB
     - PWA Manifest
