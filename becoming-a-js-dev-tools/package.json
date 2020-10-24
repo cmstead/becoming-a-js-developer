@@ -1,79 +1,169 @@
 {
-    "name": "becoming-a-js-dev-tools",
-    "displayName": "Becoming a JS Dev Tools",
-    "description": "Tools for New JS Developers -- full-stack snippets to accompany the Becoming a JS Developer project",
-    "version": "0.3.1",
-    "publisher": "cmstead",
-    "repository": {
-        "type": "GitHub",
-        "url": "https://github.com/cmstead/becoming-a-js-developer.git"
-    },
-    "engines": {
-        "vscode": "^1.12.0"
-    },
-    "categories": [
-        "Snippets"
+ "name": "becoming-a-js-dev-tools",
+ "displayName": "Becoming a JS Dev Tools",
+ "description": "Tools for New JS Developers -- full-stack snippets to accompany the Becoming a JS Developer project",
+ "version": "0.3.1",
+ "publisher": "cmstead",
+ "repository": {
+  "type": "GitHub",
+  "url": "https://github.com/cmstead/becoming-a-js-developer.git"
+ },
+ "engines": {
+  "vscode": "^1.12.0"
+ },
+ "categories": [
+  "Snippets"
+ ],
+ "activationEvents": [
+  "onCommand:cmstead.becoming-a-js-dev-tools.convertVariableType",
+  "onCommand:cmstead.becoming-a-js-dev-tools.surroundWith"
+ ],
+ "main": "./extension",
+ "contributes": {
+  "languages": [
+   {
+    "id": "javascript",
+    "extensions": [
+     ".js"
     ],
-    "activationEvents": [
-		"onCommand:cmstead.becoming-a-js-dev-tools.convertVariableType",
-		"onCommand:cmstead.becoming-a-js-dev-tools.surroundWith"
+    "aliases": [
+     "JS"
+    ]
+   },
+   {
+    "id": "html",
+    "extensions": [
+     ".htm",
+     ".html"
     ],
-    "main": "./extension",
-    "contributes": {
-        "snippets": [
-            {
-                "language": "css",
-                "path": "./snippets/css.json"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/css.json"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/css-html.json"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/indexeddb.json"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/javascript-core.json"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/jquery-js.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/indexeddb.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript-core.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/jquery-js.json"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/react.json"
-            },
-            {
-                "language": "json",
-                "extensions": [".json", ".code-snippets"],
-                "path": "./snippets/snippet-snippet.json"
-            },
-            {
-                "language": "markdown",
-                "path": "./snippets/markdown.json"
-            }
-        ]
+    "aliases": [
+     "HTML"
+    ]
+   }
+  ],
+  "commands": [
+   {
+    "command": "cmstead.becoming-a-js-dev-tools.convertVariableType",
+    "title": "Convert Variable Type",
+    "description": "Convert variable type between var, let, and const"
+   },
+   {
+    "command": "cmstead.becoming-a-js-dev-tools.surroundWith",
+    "title": "Surround With",
+    "description": "Surround Selection With Snippet Option"
+   }
+  ],
+  "snippets": [
+   {
+    "language": "css",
+    "path": "./snippets/css.json"
+   },
+   {
+    "language": "html",
+    "path": "./snippets/css.json"
+   },
+   {
+    "language": "html",
+    "path": "./snippets/css-html.json"
+   },
+   {
+    "language": "html",
+    "path": "./snippets/indexeddb.json"
+   },
+   {
+    "language": "html",
+    "path": "./snippets/javascript-core.json"
+   },
+   {
+    "language": "html",
+    "path": "./snippets/jquery-js.json"
+   },
+   {
+    "language": "javascript",
+    "path": "./snippets/indexeddb.json"
+   },
+   {
+    "language": "javascript",
+    "path": "./snippets/javascript-core.json"
+   },
+   {
+    "language": "javascript",
+    "path": "./snippets/javascript.json"
+   },
+   {
+    "language": "javascript",
+    "path": "./snippets/jquery-js.json"
+   },
+   {
+    "language": "javascriptreact",
+    "path": "./snippets/react.json"
+   },
+   {
+    "language": "json",
+    "extensions": [
+     ".webmanifest"
+    ],
+    "path": "./snippets/manifest.json"
+   },
+   {
+    "language": "json",
+    "extensions": [
+     ".json",
+     ".code-snippets"
+    ],
+    "path": "./snippets/snippet-snippet.json"
+   },
+   {
+    "language": "markdown",
+    "path": "./snippets/markdown.json"
+   }
+  ],
+  "menus": {
+   "commandPalette": [
+    {
+     "command": "cmstead.becoming-a-js-dev-tools.convertVariableType",
+     "when": "editorLangId == javascript"
+    },
+    {
+     "command": "cmstead.becoming-a-js-dev-tools.convertVariableType",
+     "when": "editorLangId == html"
+    },
+    {
+     "command": "cmstead.becoming-a-js-dev-tools.surroundWith",
+     "when": "editorLangId == javascript && editorHasSelection"
+    },
+    {
+     "command": "cmstead.becoming-a-js-dev-tools.surroundWith",
+     "when": "editorLangId == html && editorHasSelection"
     }
+   ],
+   "editor/context": [
+    {
+     "command": "cmstead.becoming-a-js-dev-tools.convertVariableType",
+     "group": "4_becoming-a-js-dev-tools",
+     "when": "editorLangId == javascript"
+    },
+    {
+     "command": "cmstead.becoming-a-js-dev-tools.convertVariableType",
+     "group": "4_becoming-a-js-dev-tools",
+     "when": "editorLangId == html"
+    },
+    {
+     "command": "cmstead.becoming-a-js-dev-tools.surroundWith",
+     "group": "4_becoming-a-js-dev-tools",
+     "when": "editorLangId == javascript && editorHasSelection"
+    },
+    {
+     "command": "cmstead.becoming-a-js-dev-tools.surroundWith",
+     "group": "4_becoming-a-js-dev-tools",
+     "when": "editorLangId == html && editorHasSelection"
+    }
+   ]
+  }
+ },
+ "dependencies": {
+  "dject": "^1.13.3",
+  "espree": "^5.0.1",
+  "estraverse": "^4.2.0"
+ }
 }

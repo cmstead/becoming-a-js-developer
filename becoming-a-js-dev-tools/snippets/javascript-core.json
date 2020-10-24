@@ -1,6 +1,4 @@
 {
-    // Base constructs
-
     "Variable": {
         "prefix": "var-const-let",
         "body": [
@@ -27,8 +25,6 @@
         "description": "New function"
     },
 
-    // Array literal
-
     "Array Literal": {
         "prefix": "array-literal",
         "body": [
@@ -36,8 +32,6 @@
         ],
         "description": "New array literal"
     },
-
-    // Object Literals
 
     "Object Literal": {
         "prefix": "object-literal",
@@ -54,8 +48,6 @@
         ],
         "description": "New object property"
     },
-
-    // Vanilla JS
 
     "Instantiable Object (Constructor + Prototype)": {
         "prefix": "object-constructor-instantiable",
@@ -80,8 +72,6 @@
         ],
         "description": "Method for a prototype-style object"
     },
-
-    // Classes
 
     "Class": {
         "prefix": "class",
@@ -112,8 +102,6 @@
         ],
         "description": "Class method"
     },
-
-    // Promises
 
     "New Promise": {
         "prefix": "new-promise",

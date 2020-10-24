@@ -12,7 +12,7 @@ function snippets (fs) {
         console.log(e);
     }
 
-    return JSON.parse(snippets);
+    return snippets;
 }
 
 module.exports = snippets;

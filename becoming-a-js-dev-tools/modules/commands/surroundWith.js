@@ -1,4 +1,5 @@
 function surroundWith(
+    logger,
     snippets,
     vsCodeFactory
 ) {
@@ -37,10 +38,14 @@ function surroundWith(
         const selection = activeTextEditor._selections[0];
 
         return function (selectedOption) {
-            const snippetString = getSnippetString(vscode, selectedOption);
-            const selectionRange = getSelectionRange(vscode, selection);
-
-            activeTextEditor.insertSnippet(snippetString, selectionRange)
+            if(typeof selectedOption === 'undefined') {
+                logger.log('Surround with action was cancelled.');
+            } else {
+                const snippetString = getSnippetString(vscode, selectedOption);
+                const selectionRange = getSelectionRange(vscode, selection);
+    
+                activeTextEditor.insertSnippet(snippetString, selectionRange)
+            }
         }
     }
 

@@ -13,7 +13,10 @@ Both the Becoming a JS Developer project, and this extension are works in progre
 
 ## Features ##
 
-The features are currently limited to snippets. As important tool ideas emerge they are likely to be added.
+### Quick Actions ###
+
+- `Convert variable` -- convert variable type between var, const, and let
+- `Surround with` -- surround code selection with snippet output (e.g. surround with a function)
 
 ### Snippets ###
 
@@ -23,8 +26,9 @@ There are currently snippets for the following:
     - Bootstrap html link
     - Clearfix
     - Style block
-- Javascript Browser API:
+- Javascript/Browser API:
     - IndexedDB
+    - PWA Manifest
 - Javascript (vanilla):
     - Variable with const/let/var selection
     - Parameter with optional default value

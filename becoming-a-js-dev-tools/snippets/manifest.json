@@ -1,0 +1,64 @@
+{
+    "PWA Web Manifest": {
+        "prefix": "pwa-web-manifest",
+        "body": [
+            "{",
+            "\t\"short_name\": \"${1:App Short Name}\",",
+            "\t\"name\": \"${2:Full Length Application Name}\",",
+            "\t\"icons\": [",
+            "\t\t$3",
+            "\t],",
+            "\t\"start_url\": \"${4:/}\",",
+            "\t\"background_color\": \"${5:#ffffff}\",",
+            "\t\"display\": \"${6|standalone,fullscreen,minimal-ui,browser|}\",",
+            "\t\"theme_color\": \"${7:#ffffff}\"",
+            "\t\"orientation\": \"${8|any,natural,landscape,landscape-primary,landscape-secondary,portrait,portrait-primary,portrait-secondary|}\"",
+            "\t\"scope\": \"${9:/}\"",
+            "\t\"shortcuts\": [",
+            "\t\t$10",
+            "\t]",
+            "}"
+        ],
+        "description": "Progressive web app web manifest"
+    },
+
+    "PWA Manifest Icon": {
+        "prefix": "pwa-icons",
+        "body": [
+            "{",
+            "\t\"src\": \"${1:icons.png}\",",
+            "\t\"sizes\": \"${2:192x192}\",",
+            "\t\"type\": \"image/${3|png,webp,gif|}\"",
+            "}"
+        ],
+        "description": "Progressive web app manifest icon"
+    },
+
+    "PWA Android Icon Size": {
+        "prefix": "pwa-android-icon-size",
+        "body": [
+            "${1|72,96,128,144,152,192,384,512|}x$1"
+        ],
+        "description": "Progressive web app icon size definition for Android"
+    },
+
+    "PWA iOS Icon Size": {
+        "prefix": "pwa-ios-icon-size",
+        "body": [
+            "${1|120,180|}x$1"
+        ],
+        "description": "Progressive web app icon size definition for iOS"
+    },
+
+    "PWA Shortcut Definition": {
+        "prefix": "pwa-shortcut",
+        "body": [
+            "{",
+            "\t\"name\": \"Today's agenda\",",
+            "\t\"url\": \"/today\",",
+            "\t\"description\": \"List of events planned for today\"",
+            "}"
+        ],
+        "description": "Progressive web app shortcut definition"
+    }
+}

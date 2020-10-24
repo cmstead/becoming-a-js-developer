@@ -59,6 +59,8 @@ function convertVariableType(
             function (error, selectedKind) {
                 if (error) {
                     logger.log('Unable to complete variable type conversion: ' + error.message);
+                } else if (typeof selectedKind === 'undefined') {
+                    logger.log('Variable conversion cancelled.');
                 } else {
                     const activeEditor = vsCodeHelperFactory.getHelperInstance().getActiveEditor();
                     const declaration = selectedLines.join('\n');
