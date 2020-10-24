@@ -19,5 +19,13 @@
             "}"
         ],
         "description": "Create a new css style block"
+    },
+
+    "BEM Class Selector": {
+        "prefix": "bem-class-selector",
+        "body": [
+            ".${1:block}${2:__${3:element}}${4:--${5:modifier}}"
+        ],
+        "description": "BEM css class selector"
     }
 }

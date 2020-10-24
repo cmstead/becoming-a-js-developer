@@ -5,5 +5,13 @@
             "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\">"
         ],
         "description": "Include Bootstrap in your HTML document"
+    },
+
+    "BEM DOM Class Name": {
+        "prefix": "bem-dom-class-name",
+        "body": [
+            "${1:block}${2:__${3:element}}${4:--${5:modifier}}"
+        ],
+        "description": "BEM DOM class name"
     }
 }
