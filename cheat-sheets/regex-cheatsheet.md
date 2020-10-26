@@ -2,7 +2,11 @@
 
 Regular expressions are a tool for performing sophisticated searches through text. They are built upon a computer science concept of "non-deterministic finite automata." In other words, regular expressions are able to perform somewhat "fuzzy" searches through text finding substrings which match a set of criteria rather than a simple string compare.
 
-We will explore some fundamental parts of regular expressions and how to put together expressions which can do some nice search work for you. We will also take a look at some of the JavaScript functions that take advantage of regex and how we can make them work for us.
+We will explore some practical fundamental parts of regular expressions and how to put together expressions which can do some nice search work for you. We will also take a look at some of the JavaScript functions that take advantage of regex and how we can make them work for us.
+
+It is worth noting, regular expressions are a very expressive pattern language and take time and practice to use well.
+
+For a more in-depth look at regular expressions and their use, visit [Regular-Expressions.info](https://www.regular-expressions.info/).
 
 ## The Basics ##
 
@@ -110,3 +114,38 @@ functionString.replace(
 ```
 
 The first capture group captured the name. We referred to it in the replacement string by "$1". The second capture group is the parameter list -- which could be empty -- and we referred to this as $2 in our replacement string.
+
+## Character Classes (AKA Character Sets) ##
+
+Character classes are a collection of possible characters, from which only one will be matched. Much like our color/colour example, we can use character classes to find the color gray/grey.  The pattern would look like the following:
+
+`/gr[ae]y/`
+
+You can also provide common ranges of characters:
+
+```javascript
+const letter = /[a-z]/i;
+const numbers = /[0-9]/
+```
+
+### Negating Character Classes ###
+
+Negating a character class means you will accept anything that is **not** in the character class. For example, if you wanted anything that was not a vowel, you could do the following:
+
+`/[^aeiou]/`
+
+It's worth noting, this is the only other place that the `^` character has specific meaning.
+
+## Other Useful Patterns ##
+
+The following is a list of *escape sequences* which result in a special set of characters.
+
+- `\w` -- "word" characters
+- `\W` -- anything **except** word characters
+- `\d` -- decimal characters
+- `\D` -- anything **except** decimal characters
+- `\s` -- space
+- `\t` -- tab
+- `\r` -- carriage return
+- `\n` -- line feed (new line)
+- `|` -- "or": `a|e` matches a, or e (`/gra|ey/`)
