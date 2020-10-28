@@ -1,6 +1,14 @@
 {
     // Inquirer snippets
 
+    "Inquirer Require": {
+        "prefix": "inquirer-require",
+        "body": [
+            "const inquirer = require('inquirer');"
+        ],
+        "description": "Require Inquirer in your module"
+    },
+
     "Inquirer Prompt": {
         "prefix": "inquirer-prompt",
         "body": [
