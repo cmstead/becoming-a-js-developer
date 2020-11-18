@@ -11,9 +11,11 @@ There are a number of wonderful learning materials out there. This is a list of 
 - Eloquent JavaScript **(Beginner/Intermediate)**
     - [Buy Local/Indie](https://www.indiebound.org/book/9781593272821)
     - [Amazon](https://www.amazon.com/Eloquent-JavaScript-Modern-Introduction-Programming/dp/1593272820)
+    - [Read Online (Free)](https://eloquentjavascript.net/)
 - You Don't Know JS (series) **(Beginner-Advanced)**
     - [Buy Local/Indie](https://www.indiebound.org/search/book?keys=You+Don%27t+Know+JS)
     - [Amazon](https://www.amazon.com/s?k=You+Don%27t+Know+JS&i=stripbooks&ref=nb_sb_noss_2)
+    - [Read Online (Free)](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
 
 ## Programming Practices ##
 
@@ -33,7 +35,7 @@ There are a number of wonderful learning materials out there. This is a list of 
         - [Bookshop (Online)](https://bookshop.org/a/287/9780201633610)
         - [Buy Local/Indie](https://www.indiebound.org/book/9780201633610)
         - [Amazon](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1?dchild=1&keywords=Design+Patterns&qid=1593448609&s=books&sr=1-1)
-- Working Effectively with Legacy Code *(Intermediate/Advanced)*
+- Working Effectively with Legacy Code **(Intermediate/Advanced)**
     - [Bookshop (Online)](https://bookshop.org/a/287/9780131177055)
     - [Buy Local/Indie](https://www.indiebound.org/book/9780131177055)
     - [Amazon](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/ref=sr_1_1?crid=3W6MT7KQ0DXL&dchild=1&keywords=working+effectively+with+legacy+code&qid=1593448666&s=books&sprefix=working+Effective%2Cstripbooks%2C210&sr=1-1)
