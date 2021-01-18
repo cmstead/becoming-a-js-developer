@@ -8,7 +8,7 @@
 - Useful Differentiators
     - Canvas
     - Accessibility (A11Y)
-        - ARIA
+        - Solid semantic HTML skills
         - WCAG (AA is the government standard)
 
 ## Cascading Style Sheets (CSS) ##
