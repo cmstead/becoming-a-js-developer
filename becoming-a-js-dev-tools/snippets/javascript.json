@@ -543,7 +543,7 @@
     "Chai Assert Outcome": {
         "prefix": "chai-assert-outcome",
         "body": [
-            "assert.${1|equal,strictEqual,throws,doesNotThrow|}(${1:actualResult}, ${2:expectedResult});"
+            "assert.${1|equal,strictEqual,throws,doesNotThrow|}(${2:actualResult}, ${3:expectedResult});"
         ],
         "description": "Chai assertion of test outcomes"
     },
